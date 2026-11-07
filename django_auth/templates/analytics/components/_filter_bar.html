@@ -1,0 +1,37 @@
+{# Панель фильтров. Показывает только фильтры, перечисленные в page.filters #}
+<form class="card card-body py-2 mb-3 filter-bar" id="dashboard-filters" autocomplete="off">
+    <div class="row g-2 align-items-center">
+        {% if 'department' in page.filters %}
+            <div class="col-12 col-md-auto">
+                <select class="form-select" name="department" aria-label="Факультет">
+                    <option value="">Все факультеты</option>
+                    {% for d in departments %}<option value="{{ d.pk }}">{{ d.name }}</option>{% endfor %}
+                </select>
+            </div>
+        {% endif %}
+        {% if 'group' in page.filters %}
+            <div class="col-6 col-md-auto">
+                <select class="form-select" name="group" aria-label="Группа">
+                    <option value="">Все группы</option>
+                    {% for g in groups %}
+                        <option value="{{ g.pk }}" data-department="{{ g.department_id }}">{{ g.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        {% endif %}
+        {% if 'period' in page.filters %}
+            <div class="col-6 col-md-auto">
+                <select class="form-select" name="period" aria-label="Период">
+                    {% for value, label in periods %}<option value="{{ value }}">{{ label }}</option>{% endfor %}
+                </select>
+            </div>
+        {% endif %}
+        <div class="col-12 col-md-auto ms-md-auto d-flex align-items-center gap-2">
+            <span class="text-secondary small" id="updated-at">загрузка…</span>
+            <button type="button" class="btn btn-icon" id="refresh" data-bs-toggle="tooltip" title="Обновить данные">
+                <i class="ti ti-refresh"></i>
+            </button>
+            <button type="button" class="btn" id="reset-filters"><i class="ti ti-filter-off me-1"></i>Сбросить</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru" data-bs-navbar-position="combined">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>{% block title %}Учебный портал{% endblock %} · Учебный портал</title>
+
+    <!-- Tabler: стили интерфейса (включают Bootstrap 5) -->
+    <link rel="stylesheet" href="{% static 'vendor/tabler/css/tabler.min.css' %}">
+    <!-- Tabler Icons: иконочный шрифт -->
+    <link rel="stylesheet" href="{% static 'vendor/tabler-icons/tabler-icons.min.css' %}">
+    <!-- Собственные стили проекта -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+<!-- Светлая / тёмная тема: скрипт подключается сразу, чтобы страница не мигала -->
+<script src="{% static 'vendor/tabler/js/tabler-theme.min.js' %}"></script>
+
+<div class="page">
+
+    <!-- ===== Боковое меню (на телефоне превращается в верхнюю панель) ===== -->
+    <aside class="navbar navbar-vertical navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#sidebar-menu"
+                    aria-controls="sidebar-menu" aria-expanded="false" aria-label="Открыть меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-brand navbar-brand-autodark">
+                <a href="/profile/" class="brand-link">
+                    <span class="brand-mark"><i class="ti ti-school"></i></span>
+                    <span class="brand-text">Учебный портал</span>
+                </a>
+            </div>
+
+            <!-- Меню пользователя в верхней панели телефона -->
+            <div class="navbar-nav flex-row d-lg-none">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link d-flex lh-1 p-0 px-2" data-bs-toggle="dropdown" aria-label="Меню пользователя">
+                        <span class="avatar avatar-sm bg-primary-lt">{{ user.username|first|upper }}</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                        <span class="dropdown-header">{{ user.username }}</span>
+                        <a class="dropdown-item" href="/profile/"><i class="ti ti-user dropdown-item-icon"></i>Профиль</a>
+                        <div class="dropdown-divider"></div>
+                        <form method="post" action="/accounts/logout/">
+                            {% csrf_token %}
+                            <button class="dropdown-item" type="submit"><i class="ti ti-logout dropdown-item-icon"></i>Выйти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="collapse navbar-collapse" id="sidebar-menu" aria-label="Главное меню">
+                <ul class="navbar-nav pt-lg-3">
+                    <li class="nav-item {% if request.path == '/profile/' %}active{% endif %}">
+                        <a class="nav-link" href="/profile/">
+                            <span class="nav-link-icon"><i class="ti ti-home"></i></span>
+                            <span class="nav-link-title">Главная</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if '/departments/' in request.path %}active{% endif %}">
+                        <a class="nav-link" href="/departments/">
+                            <span class="nav-link-icon"><i class="ti ti-building"></i></span>
+                            <span class="nav-link-title">Факультеты</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if '/groups/' in request.path %}active{% endif %}">
+                        <a class="nav-link" href="/groups/">
+                            <span class="nav-link-icon"><i class="ti ti-users-group"></i></span>
+                            <span class="nav-link-title">Учебные группы</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if '/courses/' in request.path %}active{% endif %}">
+                        <a class="nav-link" href="/courses/">
+                            <span class="nav-link-icon"><i class="ti ti-book"></i></span>
+                            <span class="nav-link-title">Курсы</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if '/tickets/' in request.path %}active{% endif %}">
+                        <a class="nav-link" href="/tickets/">
+                            <span class="nav-link-icon"><i class="ti ti-message-2"></i></span>
+                            <span class="nav-link-title">Мои обращения</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if '/retakes/' in request.path %}active{% endif %}">
+                        <a class="nav-link" href="/retakes/">
+                            <span class="nav-link-icon"><i class="ti ti-calendar-repeat"></i></span>
+                            <span class="nav-link-title">Пересдачи</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if '/manager/' in request.path %}active{% endif %}">
+                        <a class="nav-link" href="/manager/">
+                            <span class="nav-link-icon"><i class="ti ti-database-edit"></i></span>
+                            <span class="nav-link-title">Менеджер данных</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if '/analytics/' in request.path %}active{% endif %}">
+                        <a class="nav-link" href="/analytics/">
+                            <span class="nav-link-icon"><i class="ti ti-chart-bar"></i></span>
+                            <span class="nav-link-title">Дашборды</span>
+                        </a>
+                    </li>
+                    {% if user.is_staff %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/">
+                                <span class="nav-link-icon"><i class="ti ti-settings"></i></span>
+                                <span class="nav-link-title">Админка</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+
+        </div>
+    </aside>
+
+    <!-- ===== Верхняя панель (только на больших экранах) ===== -->
+    <header class="navbar navbar-expand-md d-none d-lg-flex d-print-none">
+        <div class="container-xl">
+            <div class="navbar-nav flex-row order-md-last ms-auto">
+
+                <!-- Переключатель темы -->
+                <div class="nav-item me-2">
+                    <a href="?theme=dark" class="nav-link px-0 hide-theme-dark"
+                       data-bs-toggle="tooltip" data-bs-placement="bottom" title="Тёмная тема">
+                        <i class="ti ti-moon fs-2"></i>
+                    </a>
+                    <a href="?theme=light" class="nav-link px-0 hide-theme-light"
+                       data-bs-toggle="tooltip" data-bs-placement="bottom" title="Светлая тема">
+                        <i class="ti ti-sun fs-2"></i>
+                    </a>
+                </div>
+
+                <!-- Пользователь -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Меню пользователя">
+                        <span class="avatar avatar-sm bg-primary-lt">{{ user.username|first|upper }}</span>
+                        <div class="ps-2">
+                            <div>{{ user.username }}</div>
+                            <div class="mt-1 small text-secondary">
+                                {% if user.is_superuser %}Администратор{% elif is_methodist %}Методист{% else %}Пользователь{% endif %}
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                        <a class="dropdown-item" href="/profile/"><i class="ti ti-user dropdown-item-icon"></i>Профиль</a>
+                        {% if user.is_staff %}
+                            <a class="dropdown-item" href="/admin/"><i class="ti ti-settings dropdown-item-icon"></i>Админка</a>
+                        {% endif %}
+                        <div class="dropdown-divider"></div>
+                        <form method="post" action="/accounts/logout/">
+                            {% csrf_token %}
+                            <button class="dropdown-item" type="submit"><i class="ti ti-logout dropdown-item-icon"></i>Выйти</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== Основная часть страницы ===== -->
+    <div class="page-wrapper">
+
+        <div class="page-header d-print-none">
+            <div class="container-xl">
+                <div class="row g-2 align-items-center">
+                    <div class="col">
+                        <div class="page-pretitle">{% block pretitle %}Учебные данные{% endblock %}</div>
+                        <h2 class="page-title">{% block page_title %}{% endblock %}</h2>
+                    </div>
+                    <div class="col-auto ms-auto d-print-none">
+                        {% block actions %}{% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-body">
+            <div class="container-xl">
+
+                <!-- Сообщения после добавления, изменения и удаления -->
+                {% for message in messages %}
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <div class="d-flex">
+                            <i class="ti ti-circle-check alert-icon"></i>
+                            <div>{{ message }}</div>
+                        </div>
+                        <a class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть"></a>
+                    </div>
+                {% endfor %}
+
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+
+        <footer class="footer footer-transparent d-print-none">
+            <div class="container-xl">
+                <div class="row text-center align-items-center flex-row-reverse">
+                    <div class="col-lg-auto ms-lg-auto">
+                        <ul class="list-inline list-inline-dots mb-0">
+                            <li class="list-inline-item">Интерфейс: Tabler</li>
+                            <li class="list-inline-item">Django</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                        Структура программного обеспечения и базы данных · МАИ, 2026
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<!-- Tabler: скрипты (меню, выпадающие списки, подсказки) -->
+<script src="{% static 'vendor/tabler/js/tabler.min.js' %}"></script>
+<!-- Собственные скрипты проекта -->
+<script src="{% static 'js/main.js' %}"></script>
+<!-- Скрипты отдельной страницы (например, графики дашбордов) -->
+{% block extra_js %}{% endblock %}
+</body>
+</html>

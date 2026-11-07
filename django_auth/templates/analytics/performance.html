@@ -1,0 +1,36 @@
+{% extends 'analytics/base_dashboard.html' %}
+
+{% block dashboard %}
+<div class="row row-deck row-cards mb-3">
+    <div class="col-6 col-lg-3">
+        {% include 'analytics/components/_kpi_card.html' with key='courses' label='Курсов' icon='book' color='orange' %}
+    </div>
+    <div class="col-6 col-lg-3">
+        {% include 'analytics/components/_kpi_card.html' with key='grades' label='Оценок за период' icon='list-numbers' color='purple' %}
+    </div>
+    <div class="col-6 col-lg-3">
+        {% include 'analytics/components/_kpi_card.html' with key='avg' label='Средний балл' icon='star' color='yellow' %}
+    </div>
+    <div class="col-6 col-lg-3">
+        {% include 'analytics/components/_kpi_card.html' with key='success' label='Успеваемость' icon='circle-check' color='teal' suffix='%' %}
+    </div>
+</div>
+
+<div class="row row-deck row-cards">
+    <div class="col-12 col-xl-7">
+        {% include 'analytics/components/_chart_card.html' with id='avg_trend' title='Динамика успеваемости' subtitle='Средний балл и число оценок по неделям' type='trend' height=300 %}
+    </div>
+    <div class="col-12 col-md-6 col-xl-5">
+        {% include 'analytics/components/_chart_card.html' with id='grades_by_kind' title='Оценки по видам работ' type='donut' height=300 %}
+    </div>
+    <div class="col-12 col-md-6 col-xl-6">
+        {% include 'analytics/components/_chart_card.html' with id='avg_by_course' title='Средний балл по курсам' type='score_h' height=320 %}
+    </div>
+    <div class="col-12 col-xl-6">
+        {% include 'analytics/components/_chart_card.html' with id='students_by_course' title='Студенты и оценки по курсам' type='hbar' height=320 %}
+    </div>
+    <div class="col-12">
+        {% include 'analytics/components/_table_card.html' with id='top_students' title='Лучшие студенты' subtitle='По среднему баллу за выбранный период' columns='place:№,name:Студент,group:Группа,grades:Оценок,avg:Средний балл' %}
+    </div>
+</div>
+{% endblock %}

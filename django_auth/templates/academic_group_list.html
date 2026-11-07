@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+{% block title %}Учебные группы{% endblock %}
+{% block pretitle %}Учебные данные{% endblock %}
+{% block page_title %}Учебные группы{% endblock %}
+
+{% block actions %}
+    {% if is_methodist %}
+        <!-- На компьютере кнопка с текстом, на телефоне — только иконка -->
+        <a href="/groups/add/" class="btn btn-primary d-none d-sm-inline-block">
+            <i class="ti ti-plus me-1"></i>Добавить группу
+        </a>
+        <a href="/groups/add/" class="btn btn-primary btn-icon d-sm-none" aria-label="Добавить группу">
+            <i class="ti ti-plus"></i>
+        </a>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<div class="card">
+
+    <div class="card-header">
+        <h3 class="card-title">
+            Список
+            <span class="badge bg-secondary-lt ms-2">{{ groups|length }}</span>
+        </h3>
+        <div class="card-actions w-sm-auto">
+            <!-- Поиск по таблице без перезагрузки страницы -->
+            <div class="input-icon">
+                <span class="input-icon-addon"><i class="ti ti-search"></i></span>
+                <input type="search" class="form-control" placeholder="Поиск…"
+                       data-table-search="#groups-table" aria-label="Поиск">
+            </div>
+        </div>
+    </div>
+
+    <!-- table-responsive: на узком экране таблица прокручивается внутри карточки -->
+    <div class="table-responsive">
+        <table class="table table-vcenter card-table table-striped" id="groups-table">
+            <thead>
+                <tr>
+                    <th class="w-1">ID</th>
+                    <th>Название</th>
+                    <th>Факультет</th>
+                    <th class="d-none d-md-table-cell">Студентов</th>
+                    {% if is_methodist %}
+                        <th class="w-1">Действия</th>
+                    {% endif %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for group in groups %}
+                    <tr>
+                        <td>
+                            <span class="text-secondary">{{ group.id }}</span>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <span class="avatar avatar-sm bg-green-lt me-2"><i class="ti ti-users-group"></i></span>
+                                {{ group.name }}
+                            </div>
+                        </td>
+                        <td>
+                            <span class="badge bg-azure-lt">{{ group.department.name }}</span>
+                        </td>
+                        <td class="d-none d-md-table-cell">
+                            {{ group.students.count }}
+                        </td>
+                        {% if is_methodist %}
+                            <td>
+                                <div class="btn-list flex-nowrap">
+                                    <a class="btn btn-sm btn-outline-primary" href="/groups/{{ group.id }}/edit/"
+                                       data-bs-toggle="tooltip" title="Изменить">
+                                        <i class="ti ti-pencil"></i><span class="d-none d-xl-inline ms-1">Изменить</span>
+                                    </a>
+                                    <a class="btn btn-sm btn-outline-danger" href="/groups/{{ group.id }}/delete/"
+                                       data-bs-toggle="tooltip" title="Удалить">
+                                        <i class="ti ti-trash"></i><span class="d-none d-xl-inline ms-1">Удалить</span>
+                                    </a>
+                                </div>
+                            </td>
+                        {% endif %}
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="5">
+                            <div class="empty py-4">
+                                <div class="empty-icon"><i class="ti ti-database-off fs-1"></i></div>
+                                <p class="empty-title">Учебных групп пока нет</p>
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card-footer text-secondary">
+        {% if is_methodist %}
+            Вы вошли как методист: доступны добавление, изменение и удаление.
+        {% else %}
+            Режим просмотра. Изменять данные может только методист.
+        {% endif %}
+    </div>
+
+</div>
+
+{% endblock %}

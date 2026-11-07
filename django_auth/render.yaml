@@ -1,0 +1,25 @@
+# Описание инфраструктуры для Render (Blueprint): база PostgreSQL и веб-сервис Django
+databases:
+  - name: pz8-django-db
+    plan: free
+    region: oregon
+
+services:
+  - type: web
+    name: pz8-django-app
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: bash build.sh
+    startCommand: gunicorn config.wsgi:application --bind 0.0.0.0:$PORT
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: pz8-django-db
+          property: connectionString
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: PYTHON_VERSION
+        value: "3.13.5"

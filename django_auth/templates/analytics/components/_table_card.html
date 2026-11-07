@@ -1,0 +1,15 @@
+{# Карточка таблицы. Параметры: id, title, subtitle, columns — «поле:Заголовок» через запятую #}
+<div class="card h-100">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">{{ title }}</h3>
+            {% if subtitle %}<div class="card-subtitle">{{ subtitle }}</div>{% endif %}
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-vcenter card-table" data-table="{{ id }}" data-columns="{{ columns }}">
+            <thead><tr></tr></thead>
+            <tbody><tr><td class="text-secondary">загрузка…</td></tr></tbody>
+        </table>
+    </div>
+</div>

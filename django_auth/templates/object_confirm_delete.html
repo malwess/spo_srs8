@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block pretitle %}Подтверждение{% endblock %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+
+        <div class="card">
+            <!-- Красная полоса сверху карточки -->
+            <div class="card-status-top bg-danger"></div>
+
+            <div class="card-body text-center py-4">
+                <i class="ti ti-alert-triangle text-danger icon-lg mb-2"></i>
+                <h3>Вы уверены?</h3>
+                <div class="text-secondary">
+                    Запись <strong>«{{ object }}»</strong> будет удалена без возможности восстановления.
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <form method="post" class="row g-2">
+                    {% csrf_token %}
+                    <div class="col-12 col-sm-6">
+                        <a href="{% url list_url %}" class="btn w-100">Отмена</a>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <button type="submit" class="btn btn-danger w-100">
+                            <i class="ti ti-trash me-1"></i>Удалить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

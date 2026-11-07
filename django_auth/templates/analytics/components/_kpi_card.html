@@ -1,0 +1,15 @@
+{# Карточка показателя. Параметры: key, label, icon, color, suffix, hint #}
+<div class="card card-sm kpi-card h-100">
+    <div class="card-body">
+        <div class="d-flex align-items-center">
+            <span class="avatar bg-{{ color|default:'primary' }}-lt me-3"><i class="ti ti-{{ icon }} fs-2"></i></span>
+            <div class="flex-fill">
+                <div class="text-secondary small">{{ label }}</div>
+                <div class="h2 mb-0 kpi-value" data-kpi="{{ key }}" data-suffix="{{ suffix }}">
+                    <span class="placeholder col-6"></span>
+                </div>
+            </div>
+        </div>
+        {% if hint %}<div class="text-secondary small mt-2">{{ hint }}</div>{% endif %}
+    </div>
+</div>

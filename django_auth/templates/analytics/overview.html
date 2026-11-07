@@ -1,0 +1,39 @@
+{% extends 'analytics/base_dashboard.html' %}
+
+{% block dashboard %}
+<div class="row row-deck row-cards mb-3">
+    <div class="col-6 col-lg-4 col-xl-2">
+        {% include 'analytics/components/_kpi_card.html' with key='students' label='Студентов' icon='users' color='blue' %}
+    </div>
+    <div class="col-6 col-lg-4 col-xl-2">
+        {% include 'analytics/components/_kpi_card.html' with key='groups' label='Учебных групп' icon='users-group' color='green' %}
+    </div>
+    <div class="col-6 col-lg-4 col-xl-2">
+        {% include 'analytics/components/_kpi_card.html' with key='courses' label='Курсов' icon='book' color='orange' %}
+    </div>
+    <div class="col-6 col-lg-4 col-xl-2">
+        {% include 'analytics/components/_kpi_card.html' with key='grades' label='Оценок' icon='list-numbers' color='purple' %}
+    </div>
+    <div class="col-6 col-lg-4 col-xl-2">
+        {% include 'analytics/components/_kpi_card.html' with key='avg' label='Средний балл' icon='star' color='yellow' %}
+    </div>
+    <div class="col-6 col-lg-4 col-xl-2">
+        {% include 'analytics/components/_kpi_card.html' with key='success' label='Успеваемость' icon='circle-check' color='teal' suffix='%' %}
+    </div>
+</div>
+
+<div class="row row-deck row-cards">
+    <div class="col-12 col-lg-5">
+        {% include 'analytics/components/_chart_card.html' with id='students_by_department' title='Студенты по факультетам' subtitle='Нажмите на сектор, чтобы открыть факультет' type='donut' link='переход' %}
+    </div>
+    <div class="col-12 col-lg-7">
+        {% include 'analytics/components/_chart_card.html' with id='registrations' title='Регистрация студентов' subtitle='Новые учётные записи по неделям и общее число' type='line' %}
+    </div>
+    <div class="col-12 col-lg-6">
+        {% include 'analytics/components/_chart_card.html' with id='courses_by_department' title='Курсы по факультетам' type='bar' height=240 %}
+    </div>
+    <div class="col-12 col-lg-6">
+        {% include 'analytics/components/_chart_card.html' with id='grade_distribution' title='Распределение оценок' subtitle='Сколько выставлено 2, 3, 4 и 5' type='grades' height=240 %}
+    </div>
+</div>
+{% endblock %}

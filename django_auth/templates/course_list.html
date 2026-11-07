@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block title %}Курсы{% endblock %}
+{% block pretitle %}Учебные данные{% endblock %}
+{% block page_title %}Курсы{% endblock %}
+
+{% block actions %}
+    {% if is_methodist %}
+        <!-- На компьютере кнопка с текстом, на телефоне — только иконка -->
+        <a href="/courses/add/" class="btn btn-primary d-none d-sm-inline-block">
+            <i class="ti ti-plus me-1"></i>Добавить курс
+        </a>
+        <a href="/courses/add/" class="btn btn-primary btn-icon d-sm-none" aria-label="Добавить курс">
+            <i class="ti ti-plus"></i>
+        </a>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<div class="card">
+
+    <div class="card-header">
+        <h3 class="card-title">
+            Список
+            <span class="badge bg-secondary-lt ms-2">{{ courses|length }}</span>
+        </h3>
+        <div class="card-actions w-sm-auto">
+            <!-- Поиск по таблице без перезагрузки страницы -->
+            <div class="input-icon">
+                <span class="input-icon-addon"><i class="ti ti-search"></i></span>
+                <input type="search" class="form-control" placeholder="Поиск…"
+                       data-table-search="#courses-table" aria-label="Поиск">
+            </div>
+        </div>
+    </div>
+
+    <!-- table-responsive: на узком экране таблица прокручивается внутри карточки -->
+    <div class="table-responsive">
+        <table class="table table-vcenter card-table table-striped" id="courses-table">
+            <thead>
+                <tr>
+                    <th class="w-1">ID</th>
+                    <th>Название</th>
+                    <th class="d-none d-sm-table-cell">Факультет</th>
+                    <th class="d-none d-lg-table-cell">Описание</th>
+                    {% if is_methodist %}
+                        <th class="w-1">Действия</th>
+                    {% endif %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for course in courses %}
+                    <tr>
+                        <td>
+                            <span class="text-secondary">{{ course.id }}</span>
+                        </td>
+                        <td>
+                            <div class="fw-medium">{{ course.title }}</div>
+                            <!-- на узком экране описание выводится под названием -->
+                            <div class="text-secondary small d-lg-none">
+                                {{ course.description|default:"Нет описания"|truncatechars:60 }}
+                            </div>
+                        </td>
+                        <td class="d-none d-sm-table-cell">
+                            <span class="badge bg-azure-lt">{{ course.department.name }}</span>
+                        </td>
+                        <td class="d-none d-lg-table-cell">
+                            <span class="text-secondary">{{ course.description|default:"Нет описания" }}</span>
+                        </td>
+                        {% if is_methodist %}
+                            <td>
+                                <div class="btn-list flex-nowrap">
+                                    <a class="btn btn-sm btn-outline-primary" href="/courses/{{ course.id }}/edit/"
+                                       data-bs-toggle="tooltip" title="Изменить">
+                                        <i class="ti ti-pencil"></i><span class="d-none d-xl-inline ms-1">Изменить</span>
+                                    </a>
+                                    <a class="btn btn-sm btn-outline-danger" href="/courses/{{ course.id }}/delete/"
+                                       data-bs-toggle="tooltip" title="Удалить">
+                                        <i class="ti ti-trash"></i><span class="d-none d-xl-inline ms-1">Удалить</span>
+                                    </a>
+                                </div>
+                            </td>
+                        {% endif %}
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="5">
+                            <div class="empty py-4">
+                                <div class="empty-icon"><i class="ti ti-database-off fs-1"></i></div>
+                                <p class="empty-title">Курсов пока нет</p>
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card-footer text-secondary">
+        {% if is_methodist %}
+            Вы вошли как методист: доступны добавление, изменение и удаление.
+        {% else %}
+            Режим просмотра. Изменять данные может только методист.
+        {% endif %}
+    </div>
+
+</div>
+
+{% endblock %}

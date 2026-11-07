@@ -1,0 +1,17 @@
+{# Карточка графика. Параметры: id, title, subtitle, type (bar, hbar, donut, line, stacked), height, link #}
+<div class="card h-100 chart-card">
+    <div class="card-header">
+        <div>
+            <h3 class="card-title">{{ title }}</h3>
+            {% if subtitle %}<div class="card-subtitle">{{ subtitle }}</div>{% endif %}
+        </div>
+        {% if link %}<div class="card-actions"><span class="badge bg-azure-lt">{{ link }}</span></div>{% endif %}
+    </div>
+    <div class="card-body position-relative">
+        <div class="chart" data-chart="{{ id }}" data-type="{{ type|default:'bar' }}"
+             style="min-height: {{ height|default:280 }}px"></div>
+        <div class="chart-empty" hidden>
+            <i class="ti ti-chart-bar-off fs-1 d-block mb-1"></i>Нет данных для выбранных фильтров
+        </div>
+    </div>
+</div>

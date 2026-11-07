@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{# Общий шаблон для всех дашбордов: заголовок, переключатель, фильтры и подключение скриптов #}
+
+{% block title %}{{ page.title }}{% endblock %}
+{% block pretitle %}Дашборды{% endblock %}
+{% block page_title %}{{ page.title }}{% endblock %}
+
+{% block content %}
+    {% include 'analytics/components/_dashboard_nav.html' %}
+    {% include 'analytics/components/_filter_bar.html' %}
+
+    <div id="dashboard" data-api="{% url 'analytics_api' name %}">
+        {% block dashboard %}{% endblock %}
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'vendor/apexcharts/apexcharts.min.js' %}"></script>
+    <script src="{% static 'js/charts.js' %}"></script>
+    <script src="{% static 'js/dashboard.js' %}"></script>
+{% endblock %}

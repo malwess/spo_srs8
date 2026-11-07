@@ -1,0 +1,94 @@
+/* ===== Собственные стили поверх Tabler ===== */
+
+/* Логотип: значок + название портала */
+.brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.brand-link:hover {
+    text-decoration: none;
+}
+
+.brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 8px;
+    background: var(--tblr-primary);
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.brand-text {
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: .01em;
+}
+
+/* Крупный логотип на странице входа */
+.brand-link-lg .brand-mark {
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.6rem;
+}
+
+.brand-link-lg .brand-text {
+    font-size: 1.35rem;
+}
+
+/* Иконка в окне подтверждения удаления */
+.icon-lg {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+/* Заголовок карточки со списком: на телефоне поиск переносится на новую строку */
+.card-header {
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+@media (max-width: 575.98px) {
+    .card-header .card-actions {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    /* На телефоне уменьшаем боковые отступы, чтобы таблице было больше места */
+    .page-body .container-xl,
+    .page-header .container-xl {
+        padding-left: .75rem;
+        padding-right: .75rem;
+    }
+}
+
+/* Строка «Ничего не найдено» при поиске */
+.search-empty td {
+    text-align: center;
+    color: var(--tblr-secondary);
+    padding: 1.5rem;
+}
+
+/* Поле с ошибкой (Django добавляет атрибут aria-invalid) */
+.form-control[aria-invalid="true"],
+.form-select[aria-invalid="true"] {
+    border-color: var(--tblr-danger);
+}
+
+/* ===== Дашборды (ПЗ 6) ===== */
+.nav-dashboards { flex-wrap: wrap; }
+.kpi-value { font-variant-numeric: tabular-nums; }
+.chart-empty {
+    text-align: center;
+    color: var(--tblr-secondary);
+    padding: 3rem 1rem;
+}
+#dashboard.loading .chart-card,
+#dashboard.loading .kpi-card { opacity: .6; transition: opacity .2s; }
+.apexcharts-tooltip { font-size: 12px; }

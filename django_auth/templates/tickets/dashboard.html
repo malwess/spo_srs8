@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Мои обращения{% endblock %}
+{% block pretitle %}Учебный офис{% endblock %}
+{% block page_title %}Мои обращения{% endblock %}
+
+{% block actions %}
+    <button type="button" class="btn" id="reload"><i class="ti ti-database me-1"></i>Обновить из БД</button>
+{% endblock %}
+
+{% block content %}
+<!-- Сообщения о результате операций и об ошибках -->
+<div id="message" role="status" aria-live="polite"></div>
+
+<div class="row row-cards">
+    <!-- ===== Создание обращения ===== -->
+    <div class="col-12 col-lg-4">
+        <form class="card" id="ticket-form" novalidate>
+            <div class="card-header"><h3 class="card-title">Новое обращение</h3></div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label class="form-label required" for="title">Тема</label>
+                    <input class="form-control" id="title" name="title" placeholder="Например: Пересдача по базам данных">
+                    <div class="invalid-feedback" data-error="title"></div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label required" for="category">Категория</label>
+                    <select class="form-select" id="category" name="category">
+                        <option value="">Загрузка из БД…</option>
+                    </select>
+                    <div class="invalid-feedback" data-error="category"></div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="course">Курс</label>
+                    <select class="form-select" id="course" name="course">
+                        <option value="">Не относится к курсу</option>
+                    </select>
+                    <div class="invalid-feedback" data-error="course"></div>
+                </div>
+                <div>
+                    <label class="form-label" for="description">Описание</label>
+                    <textarea class="form-control" id="description" name="description" rows="3"
+                              placeholder="Подробности обращения"></textarea>
+                </div>
+            </div>
+            <div class="card-footer text-end">
+                <button class="btn btn-primary" type="submit"><i class="ti ti-send me-1"></i>Создать обращение</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- ===== Список обращений ===== -->
+    <div class="col-12 col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Список обращений <span class="badge bg-secondary-lt ms-1" id="count">…</span></h3>
+                <div class="card-actions">
+                    <select id="status-filter" class="form-select form-select-sm" aria-label="Фильтр по статусу">
+                        <option value="">Все статусы</option>
+                        <option value="new">Новые</option>
+                        <option value="progress">На рассмотрении</option>
+                        <option value="done">Выполненные</option>
+                    </select>
+                </div>
+            </div>
+            <div class="small text-secondary px-3 pt-2">Запрос: <code id="request-url">GET /api/tickets/</code></div>
+            <div id="loading" class="p-3 text-secondary" hidden>
+                <span class="spinner-border spinner-border-sm me-2"></span>Загрузка данных…
+            </div>
+            <div class="list-group list-group-flush" id="tickets-list"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Изменение темы и описания (PATCH) -->
+<div class="modal modal-blur fade" id="edit-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <form class="modal-content" id="edit-form" novalidate>
+            <div class="modal-header">
+                <h5 class="modal-title">Изменение обращения</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-errors"></div>
+                <div class="mb-3">
+                    <label class="form-label required" for="edit-title">Тема</label>
+                    <input class="form-control" id="edit-title" name="title">
+                    <div class="invalid-feedback" data-error="title"></div>
+                </div>
+                <div>
+                    <label class="form-label" for="edit-description">Описание</label>
+                    <textarea class="form-control" id="edit-description" name="description" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link link-secondary me-auto" data-bs-dismiss="modal">Отмена</button>
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Подтверждение удаления -->
+<div class="modal modal-blur fade" id="confirm-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-status bg-danger"></div>
+            <div class="modal-body text-center py-4">
+                <i class="ti ti-alert-triangle text-danger mb-2" style="font-size: 3rem"></i>
+                <h3>Удалить обращение?</h3>
+                <div class="text-secondary" id="confirm-text"></div>
+            </div>
+            <div class="modal-footer">
+                <div class="w-100 row g-2">
+                    <div class="col"><button class="btn w-100" data-bs-dismiss="modal" id="confirm-cancel">Отмена</button></div>
+                    <div class="col"><button class="btn btn-danger w-100" id="confirm-ok">Удалить</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/api.js' %}"></script>
+<script src="{% static 'js/tickets.js' %}"></script>
+{% endblock %}

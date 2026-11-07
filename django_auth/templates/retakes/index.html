@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Пересдачи{% endblock %}
+{% block pretitle %}Бизнес-процесс{% endblock %}
+{% block page_title %}Запись на пересдачу{% endblock %}
+
+{% block content %}
+<div id="retakes" data-can-manage="{{ can_manage|yesno:'1,0' }}" data-user="{{ user.username }}">
+    <div id="message" role="status" aria-live="polite"></div>
+
+    <div class="row row-cards">
+        <!-- ===== Левая колонка: новая заявка и свободные места ===== -->
+        <div class="col-12 col-xl-4">
+            {% if not can_manage %}
+            <form class="card mb-3" id="request-form" novalidate>
+                <div class="card-header"><h3 class="card-title" id="form-title">Новая заявка</h3></div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label required" for="f-course">Курс</label>
+                        <select class="form-select" id="f-course" name="course"><option value="">Загрузка…</option></select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label required" for="f-slot">Время пересдачи</label>
+                        <select class="form-select" id="f-slot" name="slot"><option value="">Сначала выберите курс</option></select>
+                        <div class="invalid-feedback" data-error="slot"></div>
+                    </div>
+                    <div>
+                        <label class="form-label required" for="f-reason">Причина</label>
+                        <textarea class="form-control" id="f-reason" name="reason" rows="3"
+                                  placeholder="Например: не сдала контрольную из-за болезни"></textarea>
+                        <div class="invalid-feedback" data-error="reason"></div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex gap-2">
+                    <button type="button" class="btn btn-link link-secondary" id="form-reset" hidden>Отмена</button>
+                    <button class="btn btn-primary ms-auto" type="submit"><i class="ti ti-device-floppy me-1"></i>Сохранить черновик</button>
+                </div>
+            </form>
+            {% endif %}
+
+            <div class="card">
+                <div class="card-header"><h3 class="card-title">Ближайшие пересдачи</h3></div>
+                <div class="list-group list-group-flush" id="slots"></div>
+            </div>
+        </div>
+
+        <!-- ===== Правая колонка: заявки, карточка и история ===== -->
+        <div class="col-12 col-xl-8">
+            <div class="card mb-3">
+                <div class="card-header flex-wrap gap-2">
+                    <h3 class="card-title me-auto">
+                        {% if can_manage %}Заявки студентов{% else %}Мои заявки{% endif %}
+                        <span class="badge bg-secondary-lt ms-1" id="count">…</span>
+                    </h3>
+                    <select class="form-select form-select-sm w-auto" id="filter-status" aria-label="Статус">
+                        <option value="">Все статусы</option>
+                        <option value="draft">Черновики</option>
+                        <option value="submitted">Поданные</option>
+                        <option value="approved">Одобренные</option>
+                        <option value="rejected">Отклонённые</option>
+                        <option value="cancelled">Отменённые</option>
+                    </select>
+                    <select class="form-select form-select-sm w-auto" id="filter-course" aria-label="Курс">
+                        <option value="">Все курсы</option>
+                    </select>
+                </div>
+                <div class="small text-secondary px-3 pt-2">Запрос: <code id="request-url">GET /api/retakes/</code></div>
+                <div class="table-responsive">
+                    <table class="table table-vcenter card-table table-hover">
+                        <thead><tr><th>№</th>{% if can_manage %}<th>Студент</th>{% endif %}<th>Курс и время</th><th>Статус</th><th></th></tr></thead>
+                        <tbody id="requests"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card" id="detail" hidden>
+                <div class="card-header">
+                    <h3 class="card-title" id="detail-title"></h3>
+                    <div class="card-actions btn-list" id="detail-actions"></div>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-5" id="detail-info"></div>
+                        <div class="col-12 col-md-7">
+                            <div class="form-label">История заявки</div>
+                            <ul class="timeline timeline-simple" id="history"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Подтверждение удаления / действия -->
+<div class="modal modal-blur fade" id="confirm-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-status bg-danger" id="confirm-status"></div>
+            <div class="modal-body text-center py-4">
+                <h3 id="confirm-title">Подтвердите действие</h3>
+                <div class="text-secondary" id="confirm-text"></div>
+                <textarea class="form-control mt-3" id="confirm-comment" rows="2" hidden
+                          placeholder="Причина отклонения (обязательно)"></textarea>
+            </div>
+            <div class="modal-footer">
+                <div class="w-100 row g-2">
+                    <div class="col"><button class="btn w-100" data-bs-dismiss="modal" id="confirm-cancel">Отмена</button></div>
+                    <div class="col"><button class="btn btn-danger w-100" id="confirm-ok">Да</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/api.js' %}"></script>
+<script src="{% static 'js/retakes.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,114 @@
+from django.contrib.auth.models import User
+from django.db import models
+
+
+class Department(models.Model):
+    name = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name
+
+
+class Course(models.Model):
+    title = models.CharField(max_length=200)
+
+    description = models.TextField(
+        blank=True
+    )
+
+    department = models.ForeignKey(
+        Department,
+        on_delete=models.CASCADE,
+        related_name='courses'
+    )
+
+    def __str__(self):
+        return self.title
+
+
+class AcademicGroup(models.Model):
+    name = models.CharField(max_length=50)
+
+    department = models.ForeignKey(
+        Department,
+        on_delete=models.CASCADE,
+        related_name='groups'
+    )
+
+    def __str__(self):
+        return self.name
+
+
+class StudentProfile(models.Model):
+    user = models.OneToOneField(
+        User,
+        on_delete=models.CASCADE,
+        related_name='student_profile'
+    )
+
+    department = models.ForeignKey(
+        Department,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='students'
+    )
+
+    academic_group = models.ForeignKey(
+        AcademicGroup,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='students'
+    )
+
+    courses = models.ManyToManyField(
+        Course,
+        blank=True,
+        related_name='students'
+    )
+
+    def __str__(self):
+        return self.user.username
+
+
+class Grade(models.Model):
+    """Оценка студента по курсу (ПЗ 6: данные для дашбордов успеваемости)."""
+
+    KINDS = [
+        ('pz', 'Практическое занятие'),
+        ('srs', 'Самостоятельная работа'),
+        ('lr', 'Лабораторная работа'),
+        ('test', 'Контрольная работа'),
+    ]
+
+    student = models.ForeignKey(
+        StudentProfile,
+        on_delete=models.CASCADE,
+        related_name='grades',
+        verbose_name='Студент'
+    )
+
+    course = models.ForeignKey(
+        Course,
+        on_delete=models.CASCADE,
+        related_name='grades',
+        verbose_name='Курс'
+    )
+
+    kind = models.CharField('Вид работы', max_length=5, choices=KINDS, default='pz')
+
+    value = models.PositiveSmallIntegerField(
+        'Оценка',
+        choices=[(2, '2'), (3, '3'), (4, '4'), (5, '5')]
+    )
+
+    date = models.DateField('Дата')
+
+    class Meta:
+        verbose_name = 'Оценка'
+        verbose_name_plural = 'Оценки'
+        ordering = ['-date']
+
+    def __str__(self):
+        return f'{self.student} · {self.course} · {self.value}'

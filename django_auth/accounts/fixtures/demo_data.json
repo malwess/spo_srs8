@@ -1,0 +1,7625 @@
+[
+{
+ "model": "auth.group",
+ "pk": 1,
+ "fields": {
+  "name": "Методист",
+  "permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 1,
+ "fields": {
+  "password": "pbkdf2_sha256$1500000$u6tvViOATY8zyN6b0tG5o7$OAaByg4PhHOcNBJAi05DDKdgsIrPlyTI39wbipdfytE=",
+  "last_login": "2026-10-22T17:46:32.510Z",
+  "is_superuser": true,
+  "username": "admin",
+  "first_name": "",
+  "last_name": "",
+  "email": "",
+  "is_staff": true,
+  "is_active": true,
+  "date_joined": "2026-10-22T16:37:13.534Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 2,
+ "fields": {
+  "password": "pbkdf2_sha256$1500000$jc8c0wjx9lDjbIRI2BvNdU$IRB9BOaL7tYxiS9JQXeN/QL2Z6W843HMvo1q84bwvdc=",
+  "last_login": "2026-10-22T17:46:51.400Z",
+  "is_superuser": false,
+  "username": "student1",
+  "first_name": "",
+  "last_name": "",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-22T16:37:14.247Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 3,
+ "fields": {
+  "password": "pbkdf2_sha256$1500000$q2Vj2Z4ehebnRZbKl8qc3j$6EpVuTaWrS5hwter2AgZX/hhom7CLM2UtusGzSWxcqA=",
+  "last_login": "2026-10-29T20:50:14.010Z",
+  "is_superuser": false,
+  "username": "methodist",
+  "first_name": "",
+  "last_name": "",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-22T17:46:35Z",
+  "groups": [
+   [
+    "Методист"
+   ]
+  ],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 4,
+ "fields": {
+  "password": "!dhV1Q87uc2j3hJDhiTj9pIjiCIMNCzSi5JMNtEct",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_01",
+  "first_name": "Мария",
+  "last_name": "Иванова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-14T07:32:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 5,
+ "fields": {
+  "password": "!BmJfqyLSTCro2LNyuBxCCPCGsYXungzrpXKQtXpC",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_02",
+  "first_name": "Михаил",
+  "last_name": "Смирнов",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-09T07:00:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 6,
+ "fields": {
+  "password": "!B99pKC6lln2tAPNsMiljTIFjui3HLwOJMqre3KfV",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_03",
+  "first_name": "Анна",
+  "last_name": "Кузнецова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-16T07:57:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 7,
+ "fields": {
+  "password": "!ISpD8rSpIyB1otfPQaFVfNWIv3repQWapwBW9XDR",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_04",
+  "first_name": "Егор",
+  "last_name": "Попов",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-16T07:51:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 8,
+ "fields": {
+  "password": "!MBk56HJy6y2ofgzHARALIdsLBEqWWQGZpLQvbHOy",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_05",
+  "first_name": "Мария",
+  "last_name": "Васильева",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-29T07:34:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 9,
+ "fields": {
+  "password": "!V8jbxXUT3cHXV3rrekvai52Ss5wo6NPIJzfwTLoF",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_06",
+  "first_name": "Иван",
+  "last_name": "Петров",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-18T07:45:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 10,
+ "fields": {
+  "password": "!ER7H44AuyPidKo51QVIIuUzKi2rEjcz9WskO6LPh",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_07",
+  "first_name": "Виктория",
+  "last_name": "Соколова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-01T07:35:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 11,
+ "fields": {
+  "password": "!gjASWTetxezWaoCqo3U88l1OoyAotkt1G6uAz4YF",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_08",
+  "first_name": "Никита",
+  "last_name": "Михайлов",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-27T07:16:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 12,
+ "fields": {
+  "password": "!DQkSo5XfQqOzZWZs1ptty3ML5qkpsCvIRwegwg2G",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_09",
+  "first_name": "Дарья",
+  "last_name": "Новикова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-13T07:08:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 13,
+ "fields": {
+  "password": "!igWg0iPEZHhArX4oyOllv1dLNzAtUz5qHR0bvdag",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_10",
+  "first_name": "Никита",
+  "last_name": "Фёдоров",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-24T07:09:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 14,
+ "fields": {
+  "password": "!e7pXAhuva2MP4HVyxYjt62LpBZw3NHr1kSPvrl7a",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_11",
+  "first_name": "Софья",
+  "last_name": "Морозова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-09T07:59:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 15,
+ "fields": {
+  "password": "!AmARJMzYNcy19FF9OGgwDWlD0i8kvCMcWSuesOBb",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_12",
+  "first_name": "Никита",
+  "last_name": "Волков",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-21T07:12:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 16,
+ "fields": {
+  "password": "!g5hvNApzx9EvObQDrEMueNxAIpvRi3mfQHX895RQ",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_13",
+  "first_name": "Софья",
+  "last_name": "Алексеева",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-15T07:33:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 17,
+ "fields": {
+  "password": "!77E8Hp72jiWzUPJnvPTr65cjIIZ4s5NsCNWS4XoB",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_14",
+  "first_name": "Михаил",
+  "last_name": "Лебедев",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-26T07:49:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 18,
+ "fields": {
+  "password": "!2GOTMKQcYVKavW3SdLa8plk7a5Xb6OZvtQNM5V3T",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_15",
+  "first_name": "Софья",
+  "last_name": "Семёнова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-15T07:06:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 19,
+ "fields": {
+  "password": "!69ztiA57LXG95xirSnu2JoAMcAnrjQ1hQsRs5gtR",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_16",
+  "first_name": "Никита",
+  "last_name": "Егоров",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-17T07:46:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 20,
+ "fields": {
+  "password": "!1ftZ6W0fb1XHmADOhJHtprvn89iox8Eef2891sYz",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_17",
+  "first_name": "Мария",
+  "last_name": "Павлова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-06T07:47:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 21,
+ "fields": {
+  "password": "!SRv4Yf37Gi9mLIY5Nx8sUGTUtuiZrZZvfwkgBZEg",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_18",
+  "first_name": "Иван",
+  "last_name": "Козлов",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-22T07:37:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 22,
+ "fields": {
+  "password": "!5CRLPuBSzUjzKx7boFyU1WuWrWvRHoPLelvCKAkZ",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_19",
+  "first_name": "Полина",
+  "last_name": "Степанова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-06T07:48:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 23,
+ "fields": {
+  "password": "!S93RIZDsG6Eq9yfsqoXFxGnxgJduBWNEJuSCjTLc",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_20",
+  "first_name": "Егор",
+  "last_name": "Николаев",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-06T07:37:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 24,
+ "fields": {
+  "password": "!aJEMGuusnDU6Tl7vSQ20l2aXHJE7L7KjqXzaKHwh",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_21",
+  "first_name": "Софья",
+  "last_name": "Орлова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-01T07:08:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 25,
+ "fields": {
+  "password": "!9ClU3ZHWOU4jgwRRgpSOvzf0ngaRDP2lOEaZ4m24",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_22",
+  "first_name": "Никита",
+  "last_name": "Андреев",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-06T07:10:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 26,
+ "fields": {
+  "password": "!VjGUvdLwK49pIHQ7pJb7VhnqgHug9crZhDt5Ttgd",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_23",
+  "first_name": "Виктория",
+  "last_name": "Макарова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-15T07:09:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 27,
+ "fields": {
+  "password": "!t1LLonjfvRYSZ5mWGZ0t0HAafYbDSgUlXxqEW7tW",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_24",
+  "first_name": "Артём",
+  "last_name": "Никитин",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-18T07:56:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 28,
+ "fields": {
+  "password": "!2S300EzJErSvzaLB2UvBLtsx8yAudOz6czeUTpD0",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_25",
+  "first_name": "Анна",
+  "last_name": "Захарова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-08-26T07:32:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 29,
+ "fields": {
+  "password": "!mbeIWJp3z28HilBbRaNbZMfpLjDHmx0vlCzOVznu",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_26",
+  "first_name": "Егор",
+  "last_name": "Зайцев",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-01T07:31:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 30,
+ "fields": {
+  "password": "!cTIk5Koh2kB5yVf1ziy3yoOktbZGwHu0VsWyonxb",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_27",
+  "first_name": "Дарья",
+  "last_name": "Соловьёва",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-21T07:39:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 31,
+ "fields": {
+  "password": "!mfwe6YjyR7h5pzaM0hgQIMMPtms7l1NX40DKdZQd",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_28",
+  "first_name": "Никита",
+  "last_name": "Борисов",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-08-27T07:12:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 32,
+ "fields": {
+  "password": "!v7uZYRM7mYW8B46LLh0NLvvfwJltkpa9U0IbX5fu",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_29",
+  "first_name": "Софья",
+  "last_name": "Яковлева",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-19T07:48:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 33,
+ "fields": {
+  "password": "!UhBF9C4PZ8Fs1Z6bfnnVQem65n4A80oHqBHikYb5",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_30",
+  "first_name": "Максим",
+  "last_name": "Григорьев",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-10-05T07:33:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 34,
+ "fields": {
+  "password": "!yR69mkNZsE7DJAwxbAhU2tLE6ZDJQzltQl8oA3fu",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "st_31",
+  "first_name": "Елена",
+  "last_name": "Романова",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2026-09-18T07:17:00Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "accounts.department",
+ "pk": 1,
+ "fields": {
+  "name": "Информационные технологии"
+ }
+},
+{
+ "model": "accounts.department",
+ "pk": 2,
+ "fields": {
+  "name": "Прикладная математика"
+ }
+},
+{
+ "model": "accounts.course",
+ "pk": 1,
+ "fields": {
+  "title": "Веб-программирование",
+  "description": "HTML, CSS, JavaScript и основы создания веб-приложений.",
+  "department": 1
+ }
+},
+{
+ "model": "accounts.course",
+ "pk": 2,
+ "fields": {
+  "title": "Базы данных",
+  "description": "Реляционная модель, SQL-запросы и проектирование таблиц.",
+  "department": 1
+ }
+},
+{
+ "model": "accounts.course",
+ "pk": 3,
+ "fields": {
+  "title": "Программирование на Python",
+  "description": "Синтаксис языка, функции, модули и работа с файлами.",
+  "department": 1
+ }
+},
+{
+ "model": "accounts.course",
+ "pk": 4,
+ "fields": {
+  "title": "Математическое моделирование",
+  "description": "Построение и анализ математических моделей процессов.",
+  "department": 2
+ }
+},
+{
+ "model": "accounts.course",
+ "pk": 5,
+ "fields": {
+  "title": "Разработка веб-приложений",
+  "description": "",
+  "department": 1
+ }
+},
+{
+ "model": "accounts.course",
+ "pk": 6,
+ "fields": {
+  "title": "Операционные системы",
+  "description": "Процессы, память, файловые системы и командная строка.",
+  "department": 1
+ }
+},
+{
+ "model": "accounts.course",
+ "pk": 7,
+ "fields": {
+  "title": "Численные методы",
+  "description": "Методы решения уравнений и систем, интерполяция.",
+  "department": 2
+ }
+},
+{
+ "model": "accounts.course",
+ "pk": 8,
+ "fields": {
+  "title": "Теория вероятностей",
+  "description": "Случайные величины, распределения, оценки.",
+  "department": 2
+ }
+},
+{
+ "model": "accounts.academicgroup",
+ "pk": 1,
+ "fields": {
+  "name": "М3О-236БВ-25",
+  "department": 1
+ }
+},
+{
+ "model": "accounts.academicgroup",
+ "pk": 2,
+ "fields": {
+  "name": "М3О-234БВ-25",
+  "department": 1
+ }
+},
+{
+ "model": "accounts.academicgroup",
+ "pk": 3,
+ "fields": {
+  "name": "М3О-210БВ-25",
+  "department": 2
+ }
+},
+{
+ "model": "accounts.academicgroup",
+ "pk": 4,
+ "fields": {
+  "name": "М3О-212БВ-25",
+  "department": 2
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 1,
+ "fields": {
+  "user": [
+   "student1"
+  ],
+  "department": 1,
+  "academic_group": 1,
+  "courses": [
+   1,
+   2,
+   3,
+   5
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 2,
+ "fields": {
+  "user": [
+   "st_01"
+  ],
+  "department": 1,
+  "academic_group": 1,
+  "courses": [
+   1,
+   2,
+   3,
+   5,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 3,
+ "fields": {
+  "user": [
+   "st_02"
+  ],
+  "department": 1,
+  "academic_group": 1,
+  "courses": [
+   1,
+   2,
+   3,
+   5,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 4,
+ "fields": {
+  "user": [
+   "st_03"
+  ],
+  "department": 1,
+  "academic_group": 1,
+  "courses": [
+   1,
+   2,
+   3,
+   5,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 5,
+ "fields": {
+  "user": [
+   "st_04"
+  ],
+  "department": 1,
+  "academic_group": 1,
+  "courses": [
+   1,
+   2,
+   3,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 6,
+ "fields": {
+  "user": [
+   "st_05"
+  ],
+  "department": 1,
+  "academic_group": 1,
+  "courses": [
+   1,
+   2,
+   3,
+   5
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 7,
+ "fields": {
+  "user": [
+   "st_06"
+  ],
+  "department": 1,
+  "academic_group": 1,
+  "courses": [
+   1,
+   2,
+   3,
+   5
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 8,
+ "fields": {
+  "user": [
+   "st_07"
+  ],
+  "department": 1,
+  "academic_group": 1,
+  "courses": [
+   1,
+   2,
+   3,
+   5
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 9,
+ "fields": {
+  "user": [
+   "st_08"
+  ],
+  "department": 1,
+  "academic_group": 1,
+  "courses": [
+   1,
+   3,
+   5,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 10,
+ "fields": {
+  "user": [
+   "st_09"
+  ],
+  "department": 1,
+  "academic_group": 1,
+  "courses": [
+   1,
+   3,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 11,
+ "fields": {
+  "user": [
+   "st_10"
+  ],
+  "department": 1,
+  "academic_group": 1,
+  "courses": [
+   1,
+   2,
+   3,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 12,
+ "fields": {
+  "user": [
+   "st_11"
+  ],
+  "department": 1,
+  "academic_group": 2,
+  "courses": [
+   1,
+   2,
+   3,
+   5,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 13,
+ "fields": {
+  "user": [
+   "st_12"
+  ],
+  "department": 1,
+  "academic_group": 2,
+  "courses": [
+   1,
+   3,
+   5,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 14,
+ "fields": {
+  "user": [
+   "st_13"
+  ],
+  "department": 1,
+  "academic_group": 2,
+  "courses": [
+   2,
+   3,
+   5,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 15,
+ "fields": {
+  "user": [
+   "st_14"
+  ],
+  "department": 1,
+  "academic_group": 2,
+  "courses": [
+   1,
+   2,
+   3,
+   5
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 16,
+ "fields": {
+  "user": [
+   "st_15"
+  ],
+  "department": 1,
+  "academic_group": 2,
+  "courses": [
+   1,
+   2,
+   3,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 17,
+ "fields": {
+  "user": [
+   "st_16"
+  ],
+  "department": 1,
+  "academic_group": 2,
+  "courses": [
+   1,
+   2,
+   3,
+   5
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 18,
+ "fields": {
+  "user": [
+   "st_17"
+  ],
+  "department": 1,
+  "academic_group": 2,
+  "courses": [
+   1,
+   2,
+   3,
+   5
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 19,
+ "fields": {
+  "user": [
+   "st_18"
+  ],
+  "department": 1,
+  "academic_group": 2,
+  "courses": [
+   1,
+   2,
+   3,
+   5,
+   6
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 20,
+ "fields": {
+  "user": [
+   "st_19"
+  ],
+  "department": 2,
+  "academic_group": 3,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 21,
+ "fields": {
+  "user": [
+   "st_20"
+  ],
+  "department": 2,
+  "academic_group": 3,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 22,
+ "fields": {
+  "user": [
+   "st_21"
+  ],
+  "department": 2,
+  "academic_group": 3,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 23,
+ "fields": {
+  "user": [
+   "st_22"
+  ],
+  "department": 2,
+  "academic_group": 3,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 24,
+ "fields": {
+  "user": [
+   "st_23"
+  ],
+  "department": 2,
+  "academic_group": 3,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 25,
+ "fields": {
+  "user": [
+   "st_24"
+  ],
+  "department": 2,
+  "academic_group": 3,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 26,
+ "fields": {
+  "user": [
+   "st_25"
+  ],
+  "department": 2,
+  "academic_group": 3,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 27,
+ "fields": {
+  "user": [
+   "st_26"
+  ],
+  "department": 2,
+  "academic_group": 4,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 28,
+ "fields": {
+  "user": [
+   "st_27"
+  ],
+  "department": 2,
+  "academic_group": 4,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 29,
+ "fields": {
+  "user": [
+   "st_28"
+  ],
+  "department": 2,
+  "academic_group": 4,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 30,
+ "fields": {
+  "user": [
+   "st_29"
+  ],
+  "department": 2,
+  "academic_group": 4,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 31,
+ "fields": {
+  "user": [
+   "st_30"
+  ],
+  "department": 2,
+  "academic_group": 4,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.studentprofile",
+ "pk": 32,
+ "fields": {
+  "user": [
+   "st_31"
+  ],
+  "department": 2,
+  "academic_group": 4,
+  "courses": [
+   4,
+   7,
+   8
+  ]
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 1,
+ "fields": {
+  "student": 1,
+  "course": 1,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 2,
+ "fields": {
+  "student": 1,
+  "course": 1,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 3,
+ "fields": {
+  "student": 1,
+  "course": 1,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 4,
+ "fields": {
+  "student": 1,
+  "course": 1,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 5,
+ "fields": {
+  "student": 1,
+  "course": 2,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 6,
+ "fields": {
+  "student": 1,
+  "course": 2,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 7,
+ "fields": {
+  "student": 1,
+  "course": 2,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 8,
+ "fields": {
+  "student": 1,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 9,
+ "fields": {
+  "student": 1,
+  "course": 3,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 10,
+ "fields": {
+  "student": 1,
+  "course": 3,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 11,
+ "fields": {
+  "student": 1,
+  "course": 3,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 12,
+ "fields": {
+  "student": 1,
+  "course": 5,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 13,
+ "fields": {
+  "student": 1,
+  "course": 5,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 14,
+ "fields": {
+  "student": 1,
+  "course": 5,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 15,
+ "fields": {
+  "student": 1,
+  "course": 5,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 16,
+ "fields": {
+  "student": 2,
+  "course": 1,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-16"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 17,
+ "fields": {
+  "student": 2,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-01"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 18,
+ "fields": {
+  "student": 2,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 19,
+ "fields": {
+  "student": 2,
+  "course": 2,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-09-18"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 20,
+ "fields": {
+  "student": 2,
+  "course": 2,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-09-30"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 21,
+ "fields": {
+  "student": 2,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-14"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 22,
+ "fields": {
+  "student": 2,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-21"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 23,
+ "fields": {
+  "student": 2,
+  "course": 2,
+  "kind": "test",
+  "value": 2,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 24,
+ "fields": {
+  "student": 2,
+  "course": 3,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-04"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 25,
+ "fields": {
+  "student": 2,
+  "course": 3,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-13"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 26,
+ "fields": {
+  "student": 2,
+  "course": 3,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-09-16"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 27,
+ "fields": {
+  "student": 2,
+  "course": 3,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-04"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 28,
+ "fields": {
+  "student": 2,
+  "course": 3,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 29,
+ "fields": {
+  "student": 2,
+  "course": 5,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 30,
+ "fields": {
+  "student": 2,
+  "course": 5,
+  "kind": "test",
+  "value": 2,
+  "date": "2026-10-02"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 31,
+ "fields": {
+  "student": 2,
+  "course": 5,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-06"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 32,
+ "fields": {
+  "student": 2,
+  "course": 5,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-02"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 33,
+ "fields": {
+  "student": 2,
+  "course": 5,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-05"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 34,
+ "fields": {
+  "student": 2,
+  "course": 6,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-03"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 35,
+ "fields": {
+  "student": 2,
+  "course": 6,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-10"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 36,
+ "fields": {
+  "student": 2,
+  "course": 6,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-05"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 37,
+ "fields": {
+  "student": 3,
+  "course": 1,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-09-19"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 38,
+ "fields": {
+  "student": 3,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-16"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 39,
+ "fields": {
+  "student": 3,
+  "course": 1,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-17"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 40,
+ "fields": {
+  "student": 3,
+  "course": 2,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-09-10"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 41,
+ "fields": {
+  "student": 3,
+  "course": 2,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-03"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 42,
+ "fields": {
+  "student": 3,
+  "course": 2,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-09-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 43,
+ "fields": {
+  "student": 3,
+  "course": 2,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-09-17"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 44,
+ "fields": {
+  "student": 3,
+  "course": 2,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-13"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 45,
+ "fields": {
+  "student": 3,
+  "course": 3,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-09-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 46,
+ "fields": {
+  "student": 3,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-09-18"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 47,
+ "fields": {
+  "student": 3,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-09"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 48,
+ "fields": {
+  "student": 3,
+  "course": 3,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-09-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 49,
+ "fields": {
+  "student": 3,
+  "course": 3,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-16"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 50,
+ "fields": {
+  "student": 3,
+  "course": 3,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 51,
+ "fields": {
+  "student": 3,
+  "course": 5,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-09-30"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 52,
+ "fields": {
+  "student": 3,
+  "course": 5,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-12"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 53,
+ "fields": {
+  "student": 3,
+  "course": 5,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 54,
+ "fields": {
+  "student": 3,
+  "course": 5,
+  "kind": "lr",
+  "value": 2,
+  "date": "2026-09-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 55,
+ "fields": {
+  "student": 3,
+  "course": 5,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-11"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 56,
+ "fields": {
+  "student": 3,
+  "course": 6,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 57,
+ "fields": {
+  "student": 3,
+  "course": 6,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 58,
+ "fields": {
+  "student": 3,
+  "course": 6,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 59,
+ "fields": {
+  "student": 3,
+  "course": 6,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-08"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 60,
+ "fields": {
+  "student": 4,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 61,
+ "fields": {
+  "student": 4,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 62,
+ "fields": {
+  "student": 4,
+  "course": 1,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 63,
+ "fields": {
+  "student": 4,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 64,
+ "fields": {
+  "student": 4,
+  "course": 1,
+  "kind": "srs",
+  "value": 2,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 65,
+ "fields": {
+  "student": 4,
+  "course": 2,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 66,
+ "fields": {
+  "student": 4,
+  "course": 2,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 67,
+ "fields": {
+  "student": 4,
+  "course": 2,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 68,
+ "fields": {
+  "student": 4,
+  "course": 2,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 69,
+ "fields": {
+  "student": 4,
+  "course": 2,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 70,
+ "fields": {
+  "student": 4,
+  "course": 3,
+  "kind": "lr",
+  "value": 2,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 71,
+ "fields": {
+  "student": 4,
+  "course": 3,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 72,
+ "fields": {
+  "student": 4,
+  "course": 3,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 73,
+ "fields": {
+  "student": 4,
+  "course": 5,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 74,
+ "fields": {
+  "student": 4,
+  "course": 5,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 75,
+ "fields": {
+  "student": 4,
+  "course": 5,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 76,
+ "fields": {
+  "student": 4,
+  "course": 5,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 77,
+ "fields": {
+  "student": 4,
+  "course": 6,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 78,
+ "fields": {
+  "student": 4,
+  "course": 6,
+  "kind": "lr",
+  "value": 2,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 79,
+ "fields": {
+  "student": 4,
+  "course": 6,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 80,
+ "fields": {
+  "student": 4,
+  "course": 6,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-17"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 81,
+ "fields": {
+  "student": 4,
+  "course": 6,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 82,
+ "fields": {
+  "student": 4,
+  "course": 6,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 83,
+ "fields": {
+  "student": 5,
+  "course": 1,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 84,
+ "fields": {
+  "student": 5,
+  "course": 1,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-01"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 85,
+ "fields": {
+  "student": 5,
+  "course": 1,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-09-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 86,
+ "fields": {
+  "student": 5,
+  "course": 1,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 87,
+ "fields": {
+  "student": 5,
+  "course": 2,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-08"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 88,
+ "fields": {
+  "student": 5,
+  "course": 2,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-17"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 89,
+ "fields": {
+  "student": 5,
+  "course": 2,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-08"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 90,
+ "fields": {
+  "student": 5,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 91,
+ "fields": {
+  "student": 5,
+  "course": 3,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 92,
+ "fields": {
+  "student": 5,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-05"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 93,
+ "fields": {
+  "student": 5,
+  "course": 3,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-06"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 94,
+ "fields": {
+  "student": 5,
+  "course": 3,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-18"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 95,
+ "fields": {
+  "student": 5,
+  "course": 3,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 96,
+ "fields": {
+  "student": 5,
+  "course": 6,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-11"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 97,
+ "fields": {
+  "student": 5,
+  "course": 6,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-09-30"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 98,
+ "fields": {
+  "student": 5,
+  "course": 6,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 99,
+ "fields": {
+  "student": 5,
+  "course": 6,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 100,
+ "fields": {
+  "student": 5,
+  "course": 6,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-09-29"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 101,
+ "fields": {
+  "student": 5,
+  "course": 6,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 102,
+ "fields": {
+  "student": 6,
+  "course": 1,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-16"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 103,
+ "fields": {
+  "student": 6,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 104,
+ "fields": {
+  "student": 6,
+  "course": 1,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-13"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 105,
+ "fields": {
+  "student": 6,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-08"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 106,
+ "fields": {
+  "student": 6,
+  "course": 1,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 107,
+ "fields": {
+  "student": 6,
+  "course": 2,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 108,
+ "fields": {
+  "student": 6,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 109,
+ "fields": {
+  "student": 6,
+  "course": 2,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-05"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 110,
+ "fields": {
+  "student": 6,
+  "course": 2,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 111,
+ "fields": {
+  "student": 6,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 112,
+ "fields": {
+  "student": 6,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 113,
+ "fields": {
+  "student": 6,
+  "course": 3,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 114,
+ "fields": {
+  "student": 6,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-07"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 115,
+ "fields": {
+  "student": 6,
+  "course": 3,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 116,
+ "fields": {
+  "student": 6,
+  "course": 3,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 117,
+ "fields": {
+  "student": 6,
+  "course": 3,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 118,
+ "fields": {
+  "student": 6,
+  "course": 3,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-06"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 119,
+ "fields": {
+  "student": 6,
+  "course": 5,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-19"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 120,
+ "fields": {
+  "student": 6,
+  "course": 5,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 121,
+ "fields": {
+  "student": 6,
+  "course": 5,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 122,
+ "fields": {
+  "student": 6,
+  "course": 5,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 123,
+ "fields": {
+  "student": 6,
+  "course": 5,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-08"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 124,
+ "fields": {
+  "student": 7,
+  "course": 1,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 125,
+ "fields": {
+  "student": 7,
+  "course": 1,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 126,
+ "fields": {
+  "student": 7,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 127,
+ "fields": {
+  "student": 7,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 128,
+ "fields": {
+  "student": 7,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 129,
+ "fields": {
+  "student": 7,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 130,
+ "fields": {
+  "student": 7,
+  "course": 2,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 131,
+ "fields": {
+  "student": 7,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 132,
+ "fields": {
+  "student": 7,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 133,
+ "fields": {
+  "student": 7,
+  "course": 3,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 134,
+ "fields": {
+  "student": 7,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 135,
+ "fields": {
+  "student": 7,
+  "course": 3,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 136,
+ "fields": {
+  "student": 7,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 137,
+ "fields": {
+  "student": 7,
+  "course": 3,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 138,
+ "fields": {
+  "student": 7,
+  "course": 5,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 139,
+ "fields": {
+  "student": 7,
+  "course": 5,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 140,
+ "fields": {
+  "student": 7,
+  "course": 5,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 141,
+ "fields": {
+  "student": 7,
+  "course": 5,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 142,
+ "fields": {
+  "student": 7,
+  "course": 5,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 143,
+ "fields": {
+  "student": 8,
+  "course": 1,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 144,
+ "fields": {
+  "student": 8,
+  "course": 1,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 145,
+ "fields": {
+  "student": 8,
+  "course": 1,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 146,
+ "fields": {
+  "student": 8,
+  "course": 1,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-14"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 147,
+ "fields": {
+  "student": 8,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 148,
+ "fields": {
+  "student": 8,
+  "course": 1,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 149,
+ "fields": {
+  "student": 8,
+  "course": 2,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 150,
+ "fields": {
+  "student": 8,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 151,
+ "fields": {
+  "student": 8,
+  "course": 2,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-10"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 152,
+ "fields": {
+  "student": 8,
+  "course": 2,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 153,
+ "fields": {
+  "student": 8,
+  "course": 2,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 154,
+ "fields": {
+  "student": 8,
+  "course": 3,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-18"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 155,
+ "fields": {
+  "student": 8,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 156,
+ "fields": {
+  "student": 8,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 157,
+ "fields": {
+  "student": 8,
+  "course": 5,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 158,
+ "fields": {
+  "student": 8,
+  "course": 5,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 159,
+ "fields": {
+  "student": 8,
+  "course": 5,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 160,
+ "fields": {
+  "student": 8,
+  "course": 5,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 161,
+ "fields": {
+  "student": 9,
+  "course": 1,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 162,
+ "fields": {
+  "student": 9,
+  "course": 1,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 163,
+ "fields": {
+  "student": 9,
+  "course": 1,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 164,
+ "fields": {
+  "student": 9,
+  "course": 3,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-09-30"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 165,
+ "fields": {
+  "student": 9,
+  "course": 3,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 166,
+ "fields": {
+  "student": 9,
+  "course": 3,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-13"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 167,
+ "fields": {
+  "student": 9,
+  "course": 5,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 168,
+ "fields": {
+  "student": 9,
+  "course": 5,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 169,
+ "fields": {
+  "student": 9,
+  "course": 5,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-07"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 170,
+ "fields": {
+  "student": 9,
+  "course": 5,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-11"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 171,
+ "fields": {
+  "student": 9,
+  "course": 6,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 172,
+ "fields": {
+  "student": 9,
+  "course": 6,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 173,
+ "fields": {
+  "student": 9,
+  "course": 6,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-16"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 174,
+ "fields": {
+  "student": 9,
+  "course": 6,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 175,
+ "fields": {
+  "student": 10,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 176,
+ "fields": {
+  "student": 10,
+  "course": 1,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 177,
+ "fields": {
+  "student": 10,
+  "course": 1,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 178,
+ "fields": {
+  "student": 10,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 179,
+ "fields": {
+  "student": 10,
+  "course": 3,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-14"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 180,
+ "fields": {
+  "student": 10,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 181,
+ "fields": {
+  "student": 10,
+  "course": 3,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 182,
+ "fields": {
+  "student": 10,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 183,
+ "fields": {
+  "student": 10,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 184,
+ "fields": {
+  "student": 10,
+  "course": 6,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 185,
+ "fields": {
+  "student": 10,
+  "course": 6,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 186,
+ "fields": {
+  "student": 10,
+  "course": 6,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 187,
+ "fields": {
+  "student": 10,
+  "course": 6,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 188,
+ "fields": {
+  "student": 10,
+  "course": 6,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 189,
+ "fields": {
+  "student": 11,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-12"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 190,
+ "fields": {
+  "student": 11,
+  "course": 1,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-09-29"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 191,
+ "fields": {
+  "student": 11,
+  "course": 1,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 192,
+ "fields": {
+  "student": 11,
+  "course": 1,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 193,
+ "fields": {
+  "student": 11,
+  "course": 1,
+  "kind": "srs",
+  "value": 2,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 194,
+ "fields": {
+  "student": 11,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-03"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 195,
+ "fields": {
+  "student": 11,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-19"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 196,
+ "fields": {
+  "student": 11,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-04"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 197,
+ "fields": {
+  "student": 11,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 198,
+ "fields": {
+  "student": 11,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-01"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 199,
+ "fields": {
+  "student": 11,
+  "course": 3,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 200,
+ "fields": {
+  "student": 11,
+  "course": 6,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-09"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 201,
+ "fields": {
+  "student": 11,
+  "course": 6,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-09"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 202,
+ "fields": {
+  "student": 11,
+  "course": 6,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-09"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 203,
+ "fields": {
+  "student": 11,
+  "course": 6,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-09-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 204,
+ "fields": {
+  "student": 11,
+  "course": 6,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-09"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 205,
+ "fields": {
+  "student": 11,
+  "course": 6,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-01"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 206,
+ "fields": {
+  "student": 12,
+  "course": 1,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 207,
+ "fields": {
+  "student": 12,
+  "course": 1,
+  "kind": "pz",
+  "value": 2,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 208,
+ "fields": {
+  "student": 12,
+  "course": 1,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 209,
+ "fields": {
+  "student": 12,
+  "course": 2,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 210,
+ "fields": {
+  "student": 12,
+  "course": 2,
+  "kind": "pz",
+  "value": 2,
+  "date": "2026-10-10"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 211,
+ "fields": {
+  "student": 12,
+  "course": 2,
+  "kind": "pz",
+  "value": 2,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 212,
+ "fields": {
+  "student": 12,
+  "course": 2,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 213,
+ "fields": {
+  "student": 12,
+  "course": 2,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 214,
+ "fields": {
+  "student": 12,
+  "course": 3,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 215,
+ "fields": {
+  "student": 12,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-15"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 216,
+ "fields": {
+  "student": 12,
+  "course": 3,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 217,
+ "fields": {
+  "student": 12,
+  "course": 3,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-12"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 218,
+ "fields": {
+  "student": 12,
+  "course": 3,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 219,
+ "fields": {
+  "student": 12,
+  "course": 3,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-14"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 220,
+ "fields": {
+  "student": 12,
+  "course": 5,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 221,
+ "fields": {
+  "student": 12,
+  "course": 5,
+  "kind": "srs",
+  "value": 2,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 222,
+ "fields": {
+  "student": 12,
+  "course": 5,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 223,
+ "fields": {
+  "student": 12,
+  "course": 5,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 224,
+ "fields": {
+  "student": 12,
+  "course": 6,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 225,
+ "fields": {
+  "student": 12,
+  "course": 6,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-12"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 226,
+ "fields": {
+  "student": 12,
+  "course": 6,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 227,
+ "fields": {
+  "student": 12,
+  "course": 6,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-09"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 228,
+ "fields": {
+  "student": 13,
+  "course": 1,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-09-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 229,
+ "fields": {
+  "student": 13,
+  "course": 1,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 230,
+ "fields": {
+  "student": 13,
+  "course": 1,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 231,
+ "fields": {
+  "student": 13,
+  "course": 1,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-09-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 232,
+ "fields": {
+  "student": 13,
+  "course": 1,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-13"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 233,
+ "fields": {
+  "student": 13,
+  "course": 3,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-09-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 234,
+ "fields": {
+  "student": 13,
+  "course": 3,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-17"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 235,
+ "fields": {
+  "student": 13,
+  "course": 3,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 236,
+ "fields": {
+  "student": 13,
+  "course": 3,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-06"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 237,
+ "fields": {
+  "student": 13,
+  "course": 5,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-16"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 238,
+ "fields": {
+  "student": 13,
+  "course": 5,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 239,
+ "fields": {
+  "student": 13,
+  "course": 5,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-09-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 240,
+ "fields": {
+  "student": 13,
+  "course": 5,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 241,
+ "fields": {
+  "student": 13,
+  "course": 5,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 242,
+ "fields": {
+  "student": 13,
+  "course": 6,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 243,
+ "fields": {
+  "student": 13,
+  "course": 6,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 244,
+ "fields": {
+  "student": 13,
+  "course": 6,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-09-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 245,
+ "fields": {
+  "student": 13,
+  "course": 6,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 246,
+ "fields": {
+  "student": 13,
+  "course": 6,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-17"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 247,
+ "fields": {
+  "student": 13,
+  "course": 6,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-09-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 248,
+ "fields": {
+  "student": 14,
+  "course": 2,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 249,
+ "fields": {
+  "student": 14,
+  "course": 2,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 250,
+ "fields": {
+  "student": 14,
+  "course": 2,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 251,
+ "fields": {
+  "student": 14,
+  "course": 2,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 252,
+ "fields": {
+  "student": 14,
+  "course": 2,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 253,
+ "fields": {
+  "student": 14,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 254,
+ "fields": {
+  "student": 14,
+  "course": 3,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 255,
+ "fields": {
+  "student": 14,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 256,
+ "fields": {
+  "student": 14,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 257,
+ "fields": {
+  "student": 14,
+  "course": 3,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 258,
+ "fields": {
+  "student": 14,
+  "course": 3,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 259,
+ "fields": {
+  "student": 14,
+  "course": 5,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 260,
+ "fields": {
+  "student": 14,
+  "course": 5,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 261,
+ "fields": {
+  "student": 14,
+  "course": 5,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 262,
+ "fields": {
+  "student": 14,
+  "course": 6,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 263,
+ "fields": {
+  "student": 14,
+  "course": 6,
+  "kind": "test",
+  "value": 2,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 264,
+ "fields": {
+  "student": 14,
+  "course": 6,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 265,
+ "fields": {
+  "student": 14,
+  "course": 6,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 266,
+ "fields": {
+  "student": 14,
+  "course": 6,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 267,
+ "fields": {
+  "student": 15,
+  "course": 1,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-06"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 268,
+ "fields": {
+  "student": 15,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-02"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 269,
+ "fields": {
+  "student": 15,
+  "course": 1,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 270,
+ "fields": {
+  "student": 15,
+  "course": 1,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-09"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 271,
+ "fields": {
+  "student": 15,
+  "course": 1,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 272,
+ "fields": {
+  "student": 15,
+  "course": 2,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-18"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 273,
+ "fields": {
+  "student": 15,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 274,
+ "fields": {
+  "student": 15,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 275,
+ "fields": {
+  "student": 15,
+  "course": 2,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-06"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 276,
+ "fields": {
+  "student": 15,
+  "course": 2,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 277,
+ "fields": {
+  "student": 15,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 278,
+ "fields": {
+  "student": 15,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-15"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 279,
+ "fields": {
+  "student": 15,
+  "course": 3,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-17"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 280,
+ "fields": {
+  "student": 15,
+  "course": 3,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-15"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 281,
+ "fields": {
+  "student": 15,
+  "course": 3,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 282,
+ "fields": {
+  "student": 15,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 283,
+ "fields": {
+  "student": 15,
+  "course": 5,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 284,
+ "fields": {
+  "student": 15,
+  "course": 5,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 285,
+ "fields": {
+  "student": 15,
+  "course": 5,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 286,
+ "fields": {
+  "student": 15,
+  "course": 5,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 287,
+ "fields": {
+  "student": 15,
+  "course": 5,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 288,
+ "fields": {
+  "student": 16,
+  "course": 1,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-21"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 289,
+ "fields": {
+  "student": 16,
+  "course": 1,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 290,
+ "fields": {
+  "student": 16,
+  "course": 1,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 291,
+ "fields": {
+  "student": 16,
+  "course": 2,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 292,
+ "fields": {
+  "student": 16,
+  "course": 2,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 293,
+ "fields": {
+  "student": 16,
+  "course": 2,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 294,
+ "fields": {
+  "student": 16,
+  "course": 2,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 295,
+ "fields": {
+  "student": 16,
+  "course": 3,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 296,
+ "fields": {
+  "student": 16,
+  "course": 3,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 297,
+ "fields": {
+  "student": 16,
+  "course": 3,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 298,
+ "fields": {
+  "student": 16,
+  "course": 3,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-21"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 299,
+ "fields": {
+  "student": 16,
+  "course": 6,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 300,
+ "fields": {
+  "student": 16,
+  "course": 6,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 301,
+ "fields": {
+  "student": 16,
+  "course": 6,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 302,
+ "fields": {
+  "student": 16,
+  "course": 6,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 303,
+ "fields": {
+  "student": 17,
+  "course": 1,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 304,
+ "fields": {
+  "student": 17,
+  "course": 1,
+  "kind": "srs",
+  "value": 2,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 305,
+ "fields": {
+  "student": 17,
+  "course": 1,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 306,
+ "fields": {
+  "student": 17,
+  "course": 1,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 307,
+ "fields": {
+  "student": 17,
+  "course": 2,
+  "kind": "pz",
+  "value": 2,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 308,
+ "fields": {
+  "student": 17,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 309,
+ "fields": {
+  "student": 17,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 310,
+ "fields": {
+  "student": 17,
+  "course": 2,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 311,
+ "fields": {
+  "student": 17,
+  "course": 3,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 312,
+ "fields": {
+  "student": 17,
+  "course": 3,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 313,
+ "fields": {
+  "student": 17,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 314,
+ "fields": {
+  "student": 17,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 315,
+ "fields": {
+  "student": 17,
+  "course": 3,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 316,
+ "fields": {
+  "student": 17,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 317,
+ "fields": {
+  "student": 17,
+  "course": 5,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 318,
+ "fields": {
+  "student": 17,
+  "course": 5,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 319,
+ "fields": {
+  "student": 17,
+  "course": 5,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 320,
+ "fields": {
+  "student": 17,
+  "course": 5,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 321,
+ "fields": {
+  "student": 17,
+  "course": 5,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 322,
+ "fields": {
+  "student": 17,
+  "course": 5,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 323,
+ "fields": {
+  "student": 18,
+  "course": 1,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-09-06"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 324,
+ "fields": {
+  "student": 18,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 325,
+ "fields": {
+  "student": 18,
+  "course": 1,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 326,
+ "fields": {
+  "student": 18,
+  "course": 1,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-09-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 327,
+ "fields": {
+  "student": 18,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-15"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 328,
+ "fields": {
+  "student": 18,
+  "course": 2,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-09-29"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 329,
+ "fields": {
+  "student": 18,
+  "course": 2,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 330,
+ "fields": {
+  "student": 18,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-13"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 331,
+ "fields": {
+  "student": 18,
+  "course": 2,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-12"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 332,
+ "fields": {
+  "student": 18,
+  "course": 2,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-09-30"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 333,
+ "fields": {
+  "student": 18,
+  "course": 3,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 334,
+ "fields": {
+  "student": 18,
+  "course": 3,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-02"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 335,
+ "fields": {
+  "student": 18,
+  "course": 3,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-09-08"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 336,
+ "fields": {
+  "student": 18,
+  "course": 3,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-10"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 337,
+ "fields": {
+  "student": 18,
+  "course": 3,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 338,
+ "fields": {
+  "student": 18,
+  "course": 5,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-09-30"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 339,
+ "fields": {
+  "student": 18,
+  "course": 5,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 340,
+ "fields": {
+  "student": 18,
+  "course": 5,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-09-10"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 341,
+ "fields": {
+  "student": 18,
+  "course": 5,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-09-17"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 342,
+ "fields": {
+  "student": 18,
+  "course": 5,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-15"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 343,
+ "fields": {
+  "student": 19,
+  "course": 1,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-10"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 344,
+ "fields": {
+  "student": 19,
+  "course": 1,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-09-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 345,
+ "fields": {
+  "student": 19,
+  "course": 1,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-09-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 346,
+ "fields": {
+  "student": 19,
+  "course": 2,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 347,
+ "fields": {
+  "student": 19,
+  "course": 2,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 348,
+ "fields": {
+  "student": 19,
+  "course": 2,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 349,
+ "fields": {
+  "student": 19,
+  "course": 3,
+  "kind": "pz",
+  "value": 2,
+  "date": "2026-10-18"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 350,
+ "fields": {
+  "student": 19,
+  "course": 3,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 351,
+ "fields": {
+  "student": 19,
+  "course": 3,
+  "kind": "srs",
+  "value": 2,
+  "date": "2026-09-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 352,
+ "fields": {
+  "student": 19,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-11"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 353,
+ "fields": {
+  "student": 19,
+  "course": 3,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-02"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 354,
+ "fields": {
+  "student": 19,
+  "course": 5,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 355,
+ "fields": {
+  "student": 19,
+  "course": 5,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 356,
+ "fields": {
+  "student": 19,
+  "course": 5,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 357,
+ "fields": {
+  "student": 19,
+  "course": 5,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 358,
+ "fields": {
+  "student": 19,
+  "course": 5,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-09-30"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 359,
+ "fields": {
+  "student": 19,
+  "course": 5,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-21"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 360,
+ "fields": {
+  "student": 19,
+  "course": 6,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-05"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 361,
+ "fields": {
+  "student": 19,
+  "course": 6,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-10"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 362,
+ "fields": {
+  "student": 19,
+  "course": 6,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-09-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 363,
+ "fields": {
+  "student": 19,
+  "course": 6,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-17"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 364,
+ "fields": {
+  "student": 20,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 365,
+ "fields": {
+  "student": 20,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 366,
+ "fields": {
+  "student": 20,
+  "course": 4,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 367,
+ "fields": {
+  "student": 20,
+  "course": 7,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 368,
+ "fields": {
+  "student": 20,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 369,
+ "fields": {
+  "student": 20,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-15"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 370,
+ "fields": {
+  "student": 20,
+  "course": 8,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 371,
+ "fields": {
+  "student": 20,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 372,
+ "fields": {
+  "student": 20,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 373,
+ "fields": {
+  "student": 20,
+  "course": 8,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 374,
+ "fields": {
+  "student": 20,
+  "course": 8,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 375,
+ "fields": {
+  "student": 20,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 376,
+ "fields": {
+  "student": 21,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 377,
+ "fields": {
+  "student": 21,
+  "course": 4,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 378,
+ "fields": {
+  "student": 21,
+  "course": 4,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-12"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 379,
+ "fields": {
+  "student": 21,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 380,
+ "fields": {
+  "student": 21,
+  "course": 4,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 381,
+ "fields": {
+  "student": 21,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 382,
+ "fields": {
+  "student": 21,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 383,
+ "fields": {
+  "student": 21,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 384,
+ "fields": {
+  "student": 21,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 385,
+ "fields": {
+  "student": 21,
+  "course": 7,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-12"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 386,
+ "fields": {
+  "student": 21,
+  "course": 7,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 387,
+ "fields": {
+  "student": 21,
+  "course": 8,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-08"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 388,
+ "fields": {
+  "student": 21,
+  "course": 8,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 389,
+ "fields": {
+  "student": 21,
+  "course": 8,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 390,
+ "fields": {
+  "student": 21,
+  "course": 8,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-09"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 391,
+ "fields": {
+  "student": 22,
+  "course": 4,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 392,
+ "fields": {
+  "student": 22,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 393,
+ "fields": {
+  "student": 22,
+  "course": 4,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 394,
+ "fields": {
+  "student": 22,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 395,
+ "fields": {
+  "student": 22,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 396,
+ "fields": {
+  "student": 22,
+  "course": 7,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 397,
+ "fields": {
+  "student": 22,
+  "course": 7,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 398,
+ "fields": {
+  "student": 22,
+  "course": 7,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 399,
+ "fields": {
+  "student": 22,
+  "course": 7,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-17"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 400,
+ "fields": {
+  "student": 22,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-14"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 401,
+ "fields": {
+  "student": 22,
+  "course": 8,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 402,
+ "fields": {
+  "student": 22,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 403,
+ "fields": {
+  "student": 22,
+  "course": 8,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 404,
+ "fields": {
+  "student": 22,
+  "course": 8,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 405,
+ "fields": {
+  "student": 23,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 406,
+ "fields": {
+  "student": 23,
+  "course": 4,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 407,
+ "fields": {
+  "student": 23,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 408,
+ "fields": {
+  "student": 23,
+  "course": 4,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 409,
+ "fields": {
+  "student": 23,
+  "course": 4,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 410,
+ "fields": {
+  "student": 23,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 411,
+ "fields": {
+  "student": 23,
+  "course": 7,
+  "kind": "test",
+  "value": 2,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 412,
+ "fields": {
+  "student": 23,
+  "course": 7,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-18"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 413,
+ "fields": {
+  "student": 23,
+  "course": 7,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-17"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 414,
+ "fields": {
+  "student": 23,
+  "course": 7,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 415,
+ "fields": {
+  "student": 23,
+  "course": 7,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 416,
+ "fields": {
+  "student": 23,
+  "course": 8,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 417,
+ "fields": {
+  "student": 23,
+  "course": 8,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 418,
+ "fields": {
+  "student": 23,
+  "course": 8,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-11"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 419,
+ "fields": {
+  "student": 24,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 420,
+ "fields": {
+  "student": 24,
+  "course": 4,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 421,
+ "fields": {
+  "student": 24,
+  "course": 4,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 422,
+ "fields": {
+  "student": 24,
+  "course": 4,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 423,
+ "fields": {
+  "student": 24,
+  "course": 4,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-18"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 424,
+ "fields": {
+  "student": 24,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 425,
+ "fields": {
+  "student": 24,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 426,
+ "fields": {
+  "student": 24,
+  "course": 7,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 427,
+ "fields": {
+  "student": 24,
+  "course": 7,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 428,
+ "fields": {
+  "student": 24,
+  "course": 7,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 429,
+ "fields": {
+  "student": 24,
+  "course": 8,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 430,
+ "fields": {
+  "student": 24,
+  "course": 8,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-15"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 431,
+ "fields": {
+  "student": 24,
+  "course": 8,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 432,
+ "fields": {
+  "student": 25,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 433,
+ "fields": {
+  "student": 25,
+  "course": 4,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 434,
+ "fields": {
+  "student": 25,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-08"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 435,
+ "fields": {
+  "student": 25,
+  "course": 7,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 436,
+ "fields": {
+  "student": 25,
+  "course": 7,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-09-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 437,
+ "fields": {
+  "student": 25,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 438,
+ "fields": {
+  "student": 25,
+  "course": 8,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-09-30"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 439,
+ "fields": {
+  "student": 25,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 440,
+ "fields": {
+  "student": 25,
+  "course": 8,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-09-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 441,
+ "fields": {
+  "student": 25,
+  "course": 8,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-16"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 442,
+ "fields": {
+  "student": 25,
+  "course": 8,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-21"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 443,
+ "fields": {
+  "student": 25,
+  "course": 8,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 444,
+ "fields": {
+  "student": 26,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-16"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 445,
+ "fields": {
+  "student": 26,
+  "course": 4,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-09-06"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 446,
+ "fields": {
+  "student": 26,
+  "course": 4,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-03"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 447,
+ "fields": {
+  "student": 26,
+  "course": 4,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-09-03"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 448,
+ "fields": {
+  "student": 26,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-14"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 449,
+ "fields": {
+  "student": 26,
+  "course": 4,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-09-01"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 450,
+ "fields": {
+  "student": 26,
+  "course": 7,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-09-06"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 451,
+ "fields": {
+  "student": 26,
+  "course": 7,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-02"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 452,
+ "fields": {
+  "student": 26,
+  "course": 7,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 453,
+ "fields": {
+  "student": 26,
+  "course": 7,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-09-16"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 454,
+ "fields": {
+  "student": 26,
+  "course": 7,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-09-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 455,
+ "fields": {
+  "student": 26,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-03"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 456,
+ "fields": {
+  "student": 26,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-01"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 457,
+ "fields": {
+  "student": 26,
+  "course": 8,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 458,
+ "fields": {
+  "student": 26,
+  "course": 8,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-09-12"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 459,
+ "fields": {
+  "student": 26,
+  "course": 8,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-16"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 460,
+ "fields": {
+  "student": 26,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-03"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 461,
+ "fields": {
+  "student": 26,
+  "course": 8,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-18"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 462,
+ "fields": {
+  "student": 27,
+  "course": 4,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 463,
+ "fields": {
+  "student": 27,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-09-07"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 464,
+ "fields": {
+  "student": 27,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 465,
+ "fields": {
+  "student": 27,
+  "course": 7,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 466,
+ "fields": {
+  "student": 27,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 467,
+ "fields": {
+  "student": 27,
+  "course": 7,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-02"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 468,
+ "fields": {
+  "student": 27,
+  "course": 7,
+  "kind": "pz",
+  "value": 2,
+  "date": "2026-10-13"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 469,
+ "fields": {
+  "student": 27,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-05"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 470,
+ "fields": {
+  "student": 27,
+  "course": 8,
+  "kind": "pz",
+  "value": 2,
+  "date": "2026-09-04"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 471,
+ "fields": {
+  "student": 27,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 472,
+ "fields": {
+  "student": 27,
+  "course": 8,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-09-07"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 473,
+ "fields": {
+  "student": 27,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-04"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 474,
+ "fields": {
+  "student": 28,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-03"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 475,
+ "fields": {
+  "student": 28,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 476,
+ "fields": {
+  "student": 28,
+  "course": 4,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 477,
+ "fields": {
+  "student": 28,
+  "course": 4,
+  "kind": "test",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 478,
+ "fields": {
+  "student": 28,
+  "course": 4,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 479,
+ "fields": {
+  "student": 28,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 480,
+ "fields": {
+  "student": 28,
+  "course": 7,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-09-21"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 481,
+ "fields": {
+  "student": 28,
+  "course": 7,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 482,
+ "fields": {
+  "student": 28,
+  "course": 7,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-09-30"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 483,
+ "fields": {
+  "student": 28,
+  "course": 7,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-09-30"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 484,
+ "fields": {
+  "student": 28,
+  "course": 8,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 485,
+ "fields": {
+  "student": 28,
+  "course": 8,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 486,
+ "fields": {
+  "student": 28,
+  "course": 8,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 487,
+ "fields": {
+  "student": 28,
+  "course": 8,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 488,
+ "fields": {
+  "student": 29,
+  "course": 4,
+  "kind": "srs",
+  "value": 5,
+  "date": "2026-10-05"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 489,
+ "fields": {
+  "student": 29,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-29"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 490,
+ "fields": {
+  "student": 29,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-09-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 491,
+ "fields": {
+  "student": 29,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 492,
+ "fields": {
+  "student": 29,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-15"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 493,
+ "fields": {
+  "student": 29,
+  "course": 7,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 494,
+ "fields": {
+  "student": 29,
+  "course": 8,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-08"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 495,
+ "fields": {
+  "student": 29,
+  "course": 8,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-09-13"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 496,
+ "fields": {
+  "student": 29,
+  "course": 8,
+  "kind": "pz",
+  "value": 2,
+  "date": "2026-10-01"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 497,
+ "fields": {
+  "student": 29,
+  "course": 8,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-09-30"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 498,
+ "fields": {
+  "student": 29,
+  "course": 8,
+  "kind": "pz",
+  "value": 5,
+  "date": "2026-10-15"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 499,
+ "fields": {
+  "student": 29,
+  "course": 8,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-10-15"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 500,
+ "fields": {
+  "student": 30,
+  "course": 4,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 501,
+ "fields": {
+  "student": 30,
+  "course": 4,
+  "kind": "pz",
+  "value": 2,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 502,
+ "fields": {
+  "student": 30,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 503,
+ "fields": {
+  "student": 30,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 504,
+ "fields": {
+  "student": 30,
+  "course": 7,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 505,
+ "fields": {
+  "student": 30,
+  "course": 7,
+  "kind": "test",
+  "value": 2,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 506,
+ "fields": {
+  "student": 30,
+  "course": 7,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 507,
+ "fields": {
+  "student": 30,
+  "course": 7,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-21"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 508,
+ "fields": {
+  "student": 30,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 509,
+ "fields": {
+  "student": 30,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 510,
+ "fields": {
+  "student": 30,
+  "course": 8,
+  "kind": "test",
+  "value": 2,
+  "date": "2026-10-23"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 511,
+ "fields": {
+  "student": 30,
+  "course": 8,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 512,
+ "fields": {
+  "student": 31,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-19"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 513,
+ "fields": {
+  "student": 31,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 514,
+ "fields": {
+  "student": 31,
+  "course": 4,
+  "kind": "lr",
+  "value": 5,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 515,
+ "fields": {
+  "student": 31,
+  "course": 4,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 516,
+ "fields": {
+  "student": 31,
+  "course": 4,
+  "kind": "srs",
+  "value": 3,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 517,
+ "fields": {
+  "student": 31,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-07"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 518,
+ "fields": {
+  "student": 31,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 519,
+ "fields": {
+  "student": 31,
+  "course": 7,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-10-11"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 520,
+ "fields": {
+  "student": 31,
+  "course": 8,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-05"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 521,
+ "fields": {
+  "student": 31,
+  "course": 8,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 522,
+ "fields": {
+  "student": 31,
+  "course": 8,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-13"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 523,
+ "fields": {
+  "student": 31,
+  "course": 8,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-24"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 524,
+ "fields": {
+  "student": 32,
+  "course": 4,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 525,
+ "fields": {
+  "student": 32,
+  "course": 4,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-10-13"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 526,
+ "fields": {
+  "student": 32,
+  "course": 4,
+  "kind": "test",
+  "value": 3,
+  "date": "2026-10-11"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 527,
+ "fields": {
+  "student": 32,
+  "course": 4,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-09-26"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 528,
+ "fields": {
+  "student": 32,
+  "course": 7,
+  "kind": "pz",
+  "value": 2,
+  "date": "2026-09-29"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 529,
+ "fields": {
+  "student": 32,
+  "course": 7,
+  "kind": "lr",
+  "value": 4,
+  "date": "2026-10-22"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 530,
+ "fields": {
+  "student": 32,
+  "course": 7,
+  "kind": "pz",
+  "value": 2,
+  "date": "2026-10-12"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 531,
+ "fields": {
+  "student": 32,
+  "course": 7,
+  "kind": "srs",
+  "value": 4,
+  "date": "2026-10-19"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 532,
+ "fields": {
+  "student": 32,
+  "course": 8,
+  "kind": "srs",
+  "value": 2,
+  "date": "2026-10-19"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 533,
+ "fields": {
+  "student": 32,
+  "course": 8,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-09-20"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 534,
+ "fields": {
+  "student": 32,
+  "course": 8,
+  "kind": "pz",
+  "value": 4,
+  "date": "2026-09-28"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 535,
+ "fields": {
+  "student": 32,
+  "course": 8,
+  "kind": "lr",
+  "value": 3,
+  "date": "2026-10-25"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 536,
+ "fields": {
+  "student": 32,
+  "course": 8,
+  "kind": "pz",
+  "value": 3,
+  "date": "2026-09-27"
+ }
+},
+{
+ "model": "accounts.grade",
+ "pk": 537,
+ "fields": {
+  "student": 32,
+  "course": 8,
+  "kind": "test",
+  "value": 4,
+  "date": "2026-09-26"
+ }
+},
+{
+ "model": "tickets.category",
+ "pk": 1,
+ "fields": {
+  "name": "Пересдача"
+ }
+},
+{
+ "model": "tickets.category",
+ "pk": 2,
+ "fields": {
+  "name": "Перенос срока сдачи работы"
+ }
+},
+{
+ "model": "tickets.category",
+ "pk": 3,
+ "fields": {
+  "name": "Справка из учебного офиса"
+ }
+},
+{
+ "model": "tickets.category",
+ "pk": 4,
+ "fields": {
+  "name": "Вопрос по курсу"
+ }
+},
+{
+ "model": "tickets.ticket",
+ "pk": 1,
+ "fields": {
+  "title": "Перенос срока сдачи СРС 6",
+  "description": "Прошу перенести срок сдачи на неделю из-за болезни.",
+  "category": 2,
+  "course": 1,
+  "owner": [
+   "student1"
+  ],
+  "status": "progress",
+  "created_at": "2026-10-30T11:10:20.760Z",
+  "updated_at": "2026-10-30T11:10:20.760Z"
+ }
+},
+{
+ "model": "tickets.ticket",
+ "pk": 2,
+ "fields": {
+  "title": "Справка об обучении для стипендии",
+  "description": "Нужна справка для предоставления по месту требования.",
+  "category": 3,
+  "course": null,
+  "owner": [
+   "student1"
+  ],
+  "status": "done",
+  "created_at": "2026-10-30T11:10:20.763Z",
+  "updated_at": "2026-10-30T11:10:20.764Z"
+ }
+},
+{
+ "model": "tickets.ticket",
+ "pk": 3,
+ "fields": {
+  "title": "Вопрос по теме ПЗ 7",
+  "description": "Можно ли использовать свою предметную область?",
+  "category": 4,
+  "course": 2,
+  "owner": [
+   "student1"
+  ],
+  "status": "new",
+  "created_at": "2026-10-30T11:10:20.767Z",
+  "updated_at": "2026-10-30T11:10:20.767Z"
+ }
+},
+{
+ "model": "tickets.ticket",
+ "pk": 4,
+ "fields": {
+  "title": "Согласование расписания консультаций",
+  "description": "Консультации методиста по пятницам.",
+  "category": 4,
+  "course": 7,
+  "owner": [
+   "methodist"
+  ],
+  "status": "new",
+  "created_at": "2026-10-30T11:10:20.770Z",
+  "updated_at": "2026-10-30T11:10:20.770Z"
+ }
+},
+{
+ "model": "retakes.retakeslot",
+ "pk": 8,
+ "fields": {
+  "course": 2,
+  "starts_at": "2026-11-11T07:00:00Z",
+  "room": "317",
+  "capacity": 6,
+  "booked": 1
+ }
+},
+{
+ "model": "retakes.retakeslot",
+ "pk": 9,
+ "fields": {
+  "course": 2,
+  "starts_at": "2026-11-25T11:00:00Z",
+  "room": "317",
+  "capacity": 4,
+  "booked": 0
+ }
+},
+{
+ "model": "retakes.retakeslot",
+ "pk": 10,
+ "fields": {
+  "course": 1,
+  "starts_at": "2026-11-13T09:00:00Z",
+  "room": "412",
+  "capacity": 5,
+  "booked": 0
+ }
+},
+{
+ "model": "retakes.retakeslot",
+ "pk": 11,
+ "fields": {
+  "course": 3,
+  "starts_at": "2026-11-08T06:00:00Z",
+  "room": "305",
+  "capacity": 2,
+  "booked": 2
+ }
+},
+{
+ "model": "retakes.retakeslot",
+ "pk": 12,
+ "fields": {
+  "course": 7,
+  "starts_at": "2026-11-15T10:30:00Z",
+  "room": "219",
+  "capacity": 4,
+  "booked": 0
+ }
+},
+{
+ "model": "retakes.retakeslot",
+ "pk": 13,
+ "fields": {
+  "course": 8,
+  "starts_at": "2026-11-20T08:00:00Z",
+  "room": "219",
+  "capacity": 3,
+  "booked": 0
+ }
+},
+{
+ "model": "retakes.retakeslot",
+ "pk": 14,
+ "fields": {
+  "course": 6,
+  "starts_at": "2026-10-25T07:00:00Z",
+  "room": "305",
+  "capacity": 4,
+  "booked": 0
+ }
+},
+{
+ "model": "retakes.retakerequest",
+ "pk": 6,
+ "fields": {
+  "owner": [
+   "student1"
+  ],
+  "slot": 11,
+  "reason": "Не сдала лабораторную работу № 3 из-за болезни.",
+  "status": "submitted",
+  "comment": "",
+  "created_at": "2026-10-30T11:58:24.626Z",
+  "updated_at": "2026-10-30T11:58:24.637Z"
+ }
+},
+{
+ "model": "retakes.retakerequest",
+ "pk": 7,
+ "fields": {
+  "owner": [
+   "st_02"
+  ],
+  "slot": 11,
+  "reason": "Получил неудовлетворительную оценку за контрольную.",
+  "status": "approved",
+  "comment": "Допущен",
+  "created_at": "2026-10-30T11:58:24.642Z",
+  "updated_at": "2026-10-30T11:58:24.656Z"
+ }
+},
+{
+ "model": "retakes.retakerequest",
+ "pk": 8,
+ "fields": {
+  "owner": [
+   "st_05"
+  ],
+  "slot": 8,
+  "reason": "Пропустил контрольную работу по уважительной причине.",
+  "status": "submitted",
+  "comment": "",
+  "created_at": "2026-10-30T11:58:24.660Z",
+  "updated_at": "2026-10-30T11:58:24.668Z"
+ }
+},
+{
+ "model": "retakes.retakerequest",
+ "pk": 9,
+ "fields": {
+  "owner": [
+   "st_07"
+  ],
+  "slot": 8,
+  "reason": "Хочу исправить оценку за контрольную работу.",
+  "status": "rejected",
+  "comment": "Оценка 4 — пересдача на повышение не предусмотрена",
+  "created_at": "2026-10-30T11:58:24.673Z",
+  "updated_at": "2026-10-30T11:58:24.693Z"
+ }
+},
+{
+ "model": "retakes.retakerequest",
+ "pk": 10,
+ "fields": {
+  "owner": [
+   "st_12"
+  ],
+  "slot": 12,
+  "reason": "Не успела сдать СРС 2 в срок.",
+  "status": "cancelled",
+  "comment": "",
+  "created_at": "2026-10-30T11:58:24.698Z",
+  "updated_at": "2026-10-30T11:58:24.715Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 14,
+ "fields": {
+  "request": 6,
+  "action": "created",
+  "actor": [
+   "student1"
+  ],
+  "old_status": "",
+  "new_status": "draft",
+  "details": "Пересдача: Программирование на Python · 08.11.2026 09:00 · ауд. 305",
+  "created_at": "2026-10-30T11:58:24.629Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 15,
+ "fields": {
+  "request": 6,
+  "action": "submitted",
+  "actor": [
+   "student1"
+  ],
+  "old_status": "draft",
+  "new_status": "submitted",
+  "details": "Занято мест: 1 из 2",
+  "created_at": "2026-10-30T11:58:24.638Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 16,
+ "fields": {
+  "request": 7,
+  "action": "created",
+  "actor": [
+   "st_02"
+  ],
+  "old_status": "",
+  "new_status": "draft",
+  "details": "Пересдача: Программирование на Python · 08.11.2026 09:00 · ауд. 305",
+  "created_at": "2026-10-30T11:58:24.645Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 17,
+ "fields": {
+  "request": 7,
+  "action": "submitted",
+  "actor": [
+   "st_02"
+  ],
+  "old_status": "draft",
+  "new_status": "submitted",
+  "details": "Занято мест: 2 из 2",
+  "created_at": "2026-10-30T11:58:24.651Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 18,
+ "fields": {
+  "request": 7,
+  "action": "approved",
+  "actor": [
+   "methodist"
+  ],
+  "old_status": "submitted",
+  "new_status": "approved",
+  "details": "Комментарий: Допущен",
+  "created_at": "2026-10-30T11:58:24.657Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 19,
+ "fields": {
+  "request": 8,
+  "action": "created",
+  "actor": [
+   "st_05"
+  ],
+  "old_status": "",
+  "new_status": "draft",
+  "details": "Пересдача: Базы данных · 11.11.2026 10:00 · ауд. 317",
+  "created_at": "2026-10-30T11:58:24.663Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 20,
+ "fields": {
+  "request": 8,
+  "action": "submitted",
+  "actor": [
+   "st_05"
+  ],
+  "old_status": "draft",
+  "new_status": "submitted",
+  "details": "Занято мест: 1 из 6",
+  "created_at": "2026-10-30T11:58:24.668Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 21,
+ "fields": {
+  "request": 9,
+  "action": "created",
+  "actor": [
+   "st_07"
+  ],
+  "old_status": "",
+  "new_status": "draft",
+  "details": "Пересдача: Базы данных · 11.11.2026 10:00 · ауд. 317",
+  "created_at": "2026-10-30T11:58:24.676Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 22,
+ "fields": {
+  "request": 9,
+  "action": "submitted",
+  "actor": [
+   "st_07"
+  ],
+  "old_status": "draft",
+  "new_status": "submitted",
+  "details": "Занято мест: 2 из 6",
+  "created_at": "2026-10-30T11:58:24.685Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 23,
+ "fields": {
+  "request": 9,
+  "action": "rejected",
+  "actor": [
+   "methodist"
+  ],
+  "old_status": "submitted",
+  "new_status": "rejected",
+  "details": "Место освобождено. Занято мест: 1 из 6. Комментарий: Оценка 4 — пересдача на повышение не предусмотрена",
+  "created_at": "2026-10-30T11:58:24.694Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 24,
+ "fields": {
+  "request": 10,
+  "action": "created",
+  "actor": [
+   "st_12"
+  ],
+  "old_status": "",
+  "new_status": "draft",
+  "details": "Пересдача: Численные методы · 15.11.2026 13:30 · ауд. 219",
+  "created_at": "2026-10-30T11:58:24.701Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 25,
+ "fields": {
+  "request": 10,
+  "action": "submitted",
+  "actor": [
+   "st_12"
+  ],
+  "old_status": "draft",
+  "new_status": "submitted",
+  "details": "Занято мест: 1 из 4",
+  "created_at": "2026-10-30T11:58:24.709Z"
+ }
+},
+{
+ "model": "retakes.retakeevent",
+ "pk": 26,
+ "fields": {
+  "request": 10,
+  "action": "cancelled",
+  "actor": [
+   "st_12"
+  ],
+  "old_status": "submitted",
+  "new_status": "cancelled",
+  "details": "Место освобождено. Занято мест: 0 из 4",
+  "created_at": "2026-10-30T11:58:24.716Z"
+ }
+}
+]

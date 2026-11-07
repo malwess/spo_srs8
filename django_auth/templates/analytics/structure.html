@@ -1,0 +1,33 @@
+{% extends 'analytics/base_dashboard.html' %}
+
+{% block dashboard %}
+<div class="row row-deck row-cards mb-3">
+    <div class="col-6 col-lg-3">
+        {% include 'analytics/components/_kpi_card.html' with key='groups' label='Учебных групп' icon='users-group' color='green' %}
+    </div>
+    <div class="col-6 col-lg-3">
+        {% include 'analytics/components/_kpi_card.html' with key='students' label='Студентов' icon='users' color='blue' %}
+    </div>
+    <div class="col-6 col-lg-3">
+        {% include 'analytics/components/_kpi_card.html' with key='avg' label='Средний балл' icon='star' color='yellow' %}
+    </div>
+    <div class="col-6 col-lg-3">
+        {% include 'analytics/components/_kpi_card.html' with key='success' label='Успеваемость' icon='circle-check' color='teal' suffix='%' hint='Доля оценок 3 и выше' %}
+    </div>
+</div>
+
+<div class="row row-deck row-cards">
+    <div class="col-12 col-lg-6">
+        {% include 'analytics/components/_chart_card.html' with id='students_by_group' title='Студенты в группах' type='hbar' height=260 %}
+    </div>
+    <div class="col-12 col-lg-6">
+        {% include 'analytics/components/_chart_card.html' with id='avg_by_group' title='Средний балл групп' subtitle='Группы отсортированы по убыванию' type='score' height=260 %}
+    </div>
+    <div class="col-12 col-xl-7">
+        {% include 'analytics/components/_chart_card.html' with id='grade_mix_by_group' title='Структура оценок по группам' subtitle='Сколько каких оценок получила каждая группа' type='stacked' height=300 %}
+    </div>
+    <div class="col-12 col-xl-5">
+        {% include 'analytics/components/_table_card.html' with id='groups_rating' title='Рейтинг групп' columns='name:Группа,students:Студ.,grades:Оценок,avg:Балл,success:Успеваемость' %}
+    </div>
+</div>
+{% endblock %}

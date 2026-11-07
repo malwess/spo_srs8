@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Менеджер данных{% endblock %}
+{% block pretitle %}REST API{% endblock %}
+{% block page_title %}Менеджер данных{% endblock %}
+
+{% block actions %}
+    <a href="/api/" class="btn" target="_blank"><i class="ti ti-api me-1"></i>Открыть API</a>
+{% endblock %}
+
+{% block content %}
+<div id="manager" data-can-edit="{{ can_edit|yesno:'1,0' }}">
+
+    {% if not can_edit %}
+        <div class="alert alert-info">
+            <div class="d-flex"><i class="ti ti-eye alert-icon"></i>
+                <div>Вы вошли как <b>{{ user.username }}</b>. Просматривать данные можно, а изменять их разрешено
+                    только методисту — сервер проверит права при каждом запросе.</div>
+            </div>
+        </div>
+    {% endif %}
+
+    <!-- Сюда выводятся понятные сообщения об ошибках запросов -->
+    <div id="error-box"></div>
+
+    <ul class="nav nav-segmented mb-3" id="tabs">
+        <li class="nav-item">
+            <button class="nav-link active" data-tab="courses"><i class="ti ti-book me-1"></i>Курсы
+                <span class="badge bg-blue-lt ms-1" id="courses-count">…</span></button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-tab="departments"><i class="ti ti-building me-1"></i>Факультеты
+                <span class="badge bg-green-lt ms-1" id="departments-count">…</span></button>
+        </li>
+    </ul>
+
+    <!-- ===================== Курсы ===================== -->
+    <section class="card" data-panel="courses">
+        <div class="card-body border-bottom">
+            <form class="row g-2 align-items-center" id="course-filters" autocomplete="off">
+                <div class="col-12 col-lg-4">
+                    <div class="input-icon">
+                        <span class="input-icon-addon"><i class="ti ti-search"></i></span>
+                        <input type="search" class="form-control" name="search" placeholder="Поиск по названию, описанию, факультету">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <select class="form-select js-departments" name="department" aria-label="Факультет">
+                        <option value="">Все факультеты</option>
+                    </select>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <select class="form-select" name="ordering" aria-label="Сортировка">
+                        <option value="title">Название: А → Я</option>
+                        <option value="-title">Название: Я → А</option>
+                        <option value="-students_count">Больше студентов</option>
+                        <option value="-avg_grade">Выше средний балл</option>
+                        <option value="avg_grade">Ниже средний балл</option>
+                        <option value="-id">Сначала новые</option>
+                    </select>
+                </div>
+                <div class="col-12 col-lg-2 d-flex gap-2 justify-content-lg-end">
+                    <button type="button" class="btn btn-icon" id="reset-filters" title="Сбросить фильтры"><i class="ti ti-filter-off"></i></button>
+                    <button type="button" class="btn btn-primary flex-fill" id="add-course"><i class="ti ti-plus me-1"></i>Курс</button>
+                </div>
+            </form>
+            <!-- Запрос, который frontend сформировал по действиям пользователя -->
+            <div class="mt-2 small text-secondary">Запрос к API: <code id="request-url">GET /api/courses/</code></div>
+        </div>
+        <div class="table-responsive position-relative">
+            <table class="table table-vcenter card-table">
+                <thead>
+                    <tr><th>Курс</th><th>Факультет</th><th class="text-center">Студентов</th>
+                        <th class="text-center">Оценок</th><th class="text-center">Ср. балл</th><th class="w-1"></th></tr>
+                </thead>
+                <tbody id="courses-body">
+                    <tr><td colspan="6" class="text-secondary">Загрузка данных из API…</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ===================== Факультеты ===================== -->
+    <section class="card" data-panel="departments" hidden>
+        <div class="card-header">
+            <h3 class="card-title">Факультеты</h3>
+            <div class="card-actions">
+                <button type="button" class="btn btn-primary" id="add-department"><i class="ti ti-plus me-1"></i>Факультет</button>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-vcenter card-table">
+                <thead><tr><th>Название</th><th class="text-center">Курсов</th><th class="text-center">Групп</th><th class="w-1"></th></tr></thead>
+                <tbody id="departments-body"></tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+{% include 'manager/_modals.html' %}
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/api.js' %}"></script>
+<script src="{% static 'js/manager.js' %}"></script>
+{% endblock %}

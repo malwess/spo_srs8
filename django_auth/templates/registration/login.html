@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Вход · Учебный портал</title>
+    <link rel="stylesheet" href="{% static 'vendor/tabler/css/tabler.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/tabler-icons/tabler-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body class="d-flex flex-column">
+<script src="{% static 'vendor/tabler/js/tabler-theme.min.js' %}"></script>
+
+<div class="page page-center">
+    <div class="container container-tight py-4">
+
+        <!-- Логотип -->
+        <div class="text-center mb-4">
+            <a href="/profile/" class="brand-link brand-link-lg">
+                <span class="brand-mark"><i class="ti ti-school"></i></span>
+                <span class="brand-text">Учебный портал</span>
+            </a>
+        </div>
+
+        <!-- Карточка входа -->
+        <div class="card card-md">
+            <div class="card-body">
+                <h2 class="h2 text-center mb-4">Вход в учётную запись</h2>
+
+                {% if form.errors %}
+                    <div class="alert alert-danger" role="alert">
+                        <div class="d-flex">
+                            <i class="ti ti-alert-circle alert-icon"></i>
+                            <div>Неверное имя пользователя или пароль.</div>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if next and user.is_authenticated %}
+                    <div class="alert alert-warning" role="alert">
+                        <div class="d-flex">
+                            <i class="ti ti-lock alert-icon"></i>
+                            <div>У пользователя {{ user.username }} нет прав на эту страницу.
+                                Войдите под учётной записью методиста.</div>
+                        </div>
+                    </div>
+                {% endif %}
+
+                <form method="post" autocomplete="off" novalidate>
+                    {% csrf_token %}
+                    <input type="hidden" name="next" value="{{ next }}">
+
+                    <div class="mb-3">
+                        <label class="form-label" for="id_username">Имя пользователя</label>
+                        <div class="input-icon">
+                            <span class="input-icon-addon"><i class="ti ti-user"></i></span>
+                            <input type="text" name="username" id="id_username" class="form-control"
+                                   placeholder="Например, student1" autofocus required
+                                   value="{{ form.username.value|default:'' }}">
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label" for="id_password">Пароль</label>
+                        <div class="input-group input-group-flat">
+                            <input type="password" name="password" id="id_password" class="form-control"
+                                   placeholder="Ваш пароль" required>
+                            <span class="input-group-text">
+                                <a href="#" class="link-secondary" id="toggle-password"
+                                   data-bs-toggle="tooltip" title="Показать пароль">
+                                    <i class="ti ti-eye"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="ti ti-login-2 me-2"></i>Войти
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="text-center text-secondary mt-3">
+            Структура программного обеспечения и базы данных
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'vendor/tabler/js/tabler.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

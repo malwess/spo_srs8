@@ -1,0 +1,9 @@
+# локальные и секретные файлы
+.env
+db.sqlite3
+.venv/
+venv/
+__pycache__/
+*.pyc
+staticfiles/
+.idea/

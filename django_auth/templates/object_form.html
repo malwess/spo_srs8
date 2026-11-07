@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block pretitle %}Редактирование{% endblock %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+    <!-- Ширина формы: весь экран на телефоне, 8/12 на планшете, 6/12 на компьютере -->
+    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+
+        <form method="post" class="card" novalidate>
+            {% csrf_token %}
+
+            <div class="card-header">
+                <h3 class="card-title">Заполните поля</h3>
+            </div>
+
+            <div class="card-body">
+                {% for field in form %}
+                    <div class="mb-3">
+                        <label class="form-label {% if field.field.required %}required{% endif %}"
+                               for="{{ field.id_for_label }}">
+                            {{ field.label }}
+                        </label>
+
+                        {{ field }}
+
+                        {% if field.help_text %}
+                            <small class="form-hint">{{ field.help_text }}</small>
+                        {% endif %}
+
+                        {% for error in field.errors %}
+                            <div class="invalid-feedback d-block">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="card-footer d-flex flex-wrap gap-2">
+                <a href="{% url list_url %}" class="btn btn-link link-secondary">
+                    <i class="ti ti-arrow-left me-1"></i>Отмена
+                </a>
+                <button type="submit" class="btn btn-primary ms-auto">
+                    <i class="ti ti-device-floppy me-1"></i>Сохранить
+                </button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}

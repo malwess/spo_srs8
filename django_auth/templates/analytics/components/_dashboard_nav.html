@@ -1,0 +1,12 @@
+{# Переключатель между тремя дашбордами. Параметры: pages, name #}
+<ul class="nav nav-segmented nav-dashboards mb-3" role="tablist">
+    {% for key, item in pages.items %}
+        <li class="nav-item">
+            <a class="nav-link {% if key == name %}active{% endif %}"
+               href="{% if key == 'overview' %}/analytics/{% else %}/analytics/{{ key }}/{% endif %}"
+               data-keep-filters>
+                <i class="ti ti-{{ item.icon }} me-1"></i>{{ item.title }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
